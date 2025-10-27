@@ -31,3 +31,29 @@ window.onscroll = () =>
     // night_darken.style.opacity = scroll_ratio+"%"
 };
 
+
+
+// ce qui s'occupe d'ouvrir et fermer le menu hamburger
+const button = document.getElementById('dropdown-button');
+const menu = document.getElementById('user-menu');
+
+
+if (button && menu) {
+    button.addEventListener('click', () => {
+      
+        menu.toggleAttribute('data-closed'); 
+        
+        
+        const isExpanded = menu.hasAttribute('data-closed') ? 'false' : 'true';
+        button.setAttribute('aria-expanded', isExpanded);
+    });
+
+    document.addEventListener('click', (event) => {
+        const isClickInside = button.contains(event.target) || menu.contains(event.target);
+        
+        if (!isClickInside && !menu.hasAttribute('data-closed')) {
+            menu.setAttribute('data-closed', ''); // Ferme le menu
+            button.setAttribute('aria-expanded', 'false');
+        }
+    });
+}
