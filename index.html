@@ -10,12 +10,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <!-- audiowide, poppins, roboto summons -->
+    <!-- audiowide, poppins, roboto, and outfit summons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
 <body class="font-[Roboto]">
 
     <!-- Static planet background, normally in header bg -->
@@ -25,10 +24,12 @@
 
         <span class="absolute top-70 -z-10 bg-gray-400/20 blur-2xl w-full h-150"></span>
         <nav id="navbar" class="w-full h-30 flex gap-10 justify-around p-4">
+
             <div class="w-130 flex items-center gap-4">
                 <img src="assets/Stroma_Logo_cropped.png" alt="Stroma Logo" class="w-18 h-auto ml-4">
                 <h3 class="font-[audiowide] text-3xl">STROMA</h3>
             </div>
+
             <div class="w-300 flex justify-center items-center gap-14 font-[Roboto] text-xl">
                 <!-- TODO Ajouter les liens -->
                 <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Solutions</p></a>
@@ -36,9 +37,11 @@
                 <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Application</p></a>
                 <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Support</p></a>
             </div>
+
             <div class="w-130 flex justify-center items-center">
                 <button class="bg-[#292929] text-white rounded-4xl p-4 px-8 font-[Roboto] transition-all duration-150  hover:shadow-lg hover:-translate-0.5 hover:bg-white hover:text-black hover:border-2 hover:font-bold">S'inscrire Maintenant</button>
             </div>
+
         </nav>
 
         <!-- color of text = bg-gradient, is clipped || cant do gradient on base text color -->
@@ -52,6 +55,7 @@
         </div>
 
         <div id="hero_down_div" class=" flex h-full font-[Roboto] bg-[url(/assets/line_white.png)] bg-position-[center_bottom] bg-no-repeat bg-contain ">
+
             <div class=" w-full flex flex-col justify-between font-bold text-3xl max-[1540px]:text-xl">
                 <div class=" p-4 px-24 h-auto ">
                     <h4 class="pl-1">Données Des Plantes <br> En Temps Réel.</h4>
@@ -64,16 +68,19 @@
                     <h4>Eau Économisée <br> En Moyenne <br> Avec STROMA </h4>
                 </div>
             </div>
+
             <div class="w-full h-110 flex flex-col justify-center items-center">
                 <button class="relative top-95 z-1 bg-[#2b2b2b]/70 backdrop-blur-2xl rounded-4xl mt-5 p-2 px-5 text-white font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5">Commencer Gratuitement</button>
                 <img id="plants" class="w-[85%] relative bottom-15" src="assets/plants.png" alt="Multiple plants with white stylised pots">
             </div>
+
             <div class=" w-full font-bold flex flex-col items-center">
                 <div>
                     <h4 class="w-50 text-3xl">La Nature, Protégée Par Nos Codes</h4>
                     <h5 class="text-gray-500 text-2xl" >Avenir, Nature, Technologie</h5>
                 </div>
             </div>
+
         </div>
 
         <!-- Overlay div, containing masked plane on the planet (can be move from js by editing mask-position) -->
@@ -86,6 +93,7 @@
 
     <section class="py-15 h-screen flex gap-5 justify-center bg-white ">
         <div class="w-[31%] flex flex-col justify-around">
+
             <div class="flex flex-col justify-center items-center text-justify h-[32%] rounded-tl-2xl rounded-bl-2xl text-xl max-[1540px]:text-base">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
@@ -109,6 +117,7 @@
                     </p>
                 </div>
             </div>
+
             <div class=" flex flex-col items-center text-justify h-[33%] text-xl max-[1540px]:text-base">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
@@ -131,6 +140,7 @@
                     </p>
                 </div>
             </div>
+            
             <div class="flex flex-col items-center text-justify h-[32%] text-xl max-[1540px]:text-base">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
@@ -151,12 +161,13 @@
             </div>
         </div>
 
-        <div class="w-[31%] flex flex-col">
-            <h4 class="text-center bg">plante</h4>
+        <div class="w-[31%] flex flex-col items-center">
+            <h4 class="text-xl font-[Outfit]">Plante</h4>
             <img class="object-contain -translate-x-10" src="assets/showcase.png" alt="">
         </div>
 
         <div class="w-[31%] flex flex-col justify-center gap-8">
+
             <div class="h-[35%] flex flex-col gap-3 items-center">
                 <h3 class="font-bold text-3xl w-80">Que savons-nous des besoins des plantes ?</h3>
                 <!-- Silly top line thingy, -->
@@ -169,6 +180,7 @@
                     </p>
                 </div>
             </div>
+
             <div class="h-[60%] flex min-h-1 flex-col gap-4 items-center">
                 <div class="flex gap-3 items-end">
                     <a href="https://fr.wikipedia.org/wiki/Eau" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
@@ -190,6 +202,7 @@
                     </p>
                 </div>
             </div>
+
         </div>
     </section>
 
