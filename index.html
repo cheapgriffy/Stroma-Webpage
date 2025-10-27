@@ -21,7 +21,7 @@
     <!-- Static planet background, normally in header bg -->
     <!-- bg-[url(/assets/World.png)] -->
 
-    <header class="bg-no-repeat bg-center bg-contain flex flex-col w-full h-screen">
+    <header class="bg-no-repeat bg-center bg-contain flex flex-col w-full h-screen max-[1540px]:h-[110vh]">
 
         <span class="absolute top-70 -z-10 bg-gray-400/20 blur-2xl w-full h-150"></span>
         <nav id="navbar" class="w-full h-30 flex gap-10 justify-around p-4">
@@ -44,22 +44,22 @@
         <!-- color of text = bg-gradient, is clipped || cant do gradient on base text color -->
         <!-- par contre la vie de oim je pisse sur ceux qui on decider que webkit devait étre different. j'vous lache le meilleur coulis de redbull sponso par ma vessie en sah -->
         <div class="h-90 flex justify-center items-end                                        
-        text-[300px] max-[1530px]:text-[200px] transition-all font-bold font-[Roboto] tracking-[40px] text-black/80
-        bg-gradient-to-b from-[#111112] via-[#111112]/80 to-transparent
+        text-[300px] max-[1540px]:text-[200px] transition-all font-bold font-[Roboto] tracking-[40px] text-black/80
+        bg-linear-to-b from-[#111112] via-[#111112]/80 to-transparent
         bg-clip-text mix-blend-screen select-none">
             <!-- TODO faut fix le blend mode, ça va pas tres bien avec le nouveau planet background -->
             <h1 id="stroma_title" class="relative top-20">STROMA</h1>
         </div>
 
-        <div id="hero_down_div" class=" flex h-full font-[Roboto] bg-[url(/assets/line_white.png)] bg-position-[center_bottom] bg-no-repeat bg-contain">
-            <div class=" w-full flex flex-col justify-between font-bold text-3xl max-[1530px]:text-xl">
+        <div id="hero_down_div" class=" flex h-full font-[Roboto] bg-[url(/assets/line_white.png)] bg-position-[center_bottom] bg-no-repeat bg-contain ">
+            <div class=" w-full flex flex-col justify-between font-bold text-3xl max-[1540px]:text-xl">
                 <div class=" p-4 px-24 h-auto ">
                     <h4 class="pl-1">Données Des Plantes <br> En Temps Réel.</h4>
                     <h4 class="text-gray-500 pl-1">Programmation <br> Automatique, <br> Alerte Fuite & Sécheresse.</h4>
                     <h4 class="pl-1">Arrosage Rapide.</h4>
-                    <button class="border-gray-600 border-1 bg-white/90 backdrop-blur-2xl text-gray-600 rounded-4xl mt-5 p-2 px-5 font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5"> Voir Plus De Détails</button>
+                    <button class="border-gray-600 border bg-white/90 backdrop-blur-2xl text-gray-600 rounded-4xl mt-5 p-2 px-5 font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5"> Voir Plus De Détails</button>
                 </div>
-                <div class=" flex justify-center max-[1530px]:scale-70 items-center h-auto flex-nowrap">
+                <div class=" flex justify-center max-[1540px]:scale-70 items-center h-auto flex-nowrap">
                     <p class="font-normal text-[100px] pr-8 text-nowrap">40% +</p> 
                     <h4>Eau Économisée <br> En Moyenne <br> Avec STROMA </h4>
                 </div>
@@ -84,9 +84,9 @@
         </div>
     </header>
 
-    <section class="py-15 h-screen flex gap-5 justify-center bg-white">
+    <section class="py-15 h-screen flex gap-5 justify-center bg-white ">
         <div class="w-[31%] flex flex-col justify-around">
-            <div class="flex flex-col items-center text-justify h-[32%] rounded-tl-2xl rounded-bl-2xl text-xl">
+            <div class="flex flex-col justify-center items-center text-justify h-[32%] rounded-tl-2xl rounded-bl-2xl text-xl max-[1540px]:text-base">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
                     <span class="w-[45%] h-full rounded-2xl bg-[#5f5f5f]"></span>
@@ -95,7 +95,7 @@
                     <a href="https://fr.wikipedia.org/wiki/Azote" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
                         <img class="scale-100" src="assets/periodic_table/nitrogen.png" alt="">
                     </a>
-                    <p class="p-5 w-[90%] border-[#5f5f5f]"><strong>L’azote</strong> <br> est 
+                    <p class="p-5 w-[90%] border-[#5f5f5f] "><strong>L’azote</strong> <br> est 
                     l’un des éléments les plus importants 
                     pour la croissance des plantes, 
                     car il participe à la formation de 
@@ -109,10 +109,10 @@
                     </p>
                 </div>
             </div>
-            <div class="flex flex-col items-center text-justify h-[32%] text-xl">
+            <div class=" flex flex-col items-center text-justify h-[33%] text-xl max-[1540px]:text-base">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
-                    <span class="w-[45%] h-full rounded-2xl bg-[#5f5f5f]"></span>
+                    <span class="w-[45%] min-h-1 h-full rounded-2xl bg-[#5f5f5f]"></span>
                 </div>
                 <div class="flex">
                     <a href="https://fr.wikipedia.org/wiki/Phosphore" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
@@ -131,10 +131,10 @@
                     </p>
                 </div>
             </div>
-            <div class="flex flex-col items-center text-justify h-[32%] text-xl">
+            <div class="flex flex-col items-center text-justify h-[32%] text-xl max-[1540px]:text-base">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
-                    <span class="w-[45%] h-full rounded-2xl bg-[#5f5f5f]"></span>
+                    <span class="w-[45%] min-h-1 h-full rounded-2xl bg-[#5f5f5f]"></span>
                 </div>
                 <div class="flex">
                     <a href="https://fr.wikipedia.org/wiki/Potassium" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
@@ -157,8 +157,39 @@
         </div>
 
         <div class="w-[31%] flex flex-col justify-center gap-8">
-            <div class="h-[35%]"></div>
-            <div class="h-[50%]"></div>
+            <div class="h-[35%] flex flex-col gap-3 items-center">
+                <h3 class="font-bold text-3xl w-80">Que savons-nous des besoins des plantes ?</h3>
+                <!-- Silly top line thingy, -->
+                <div class="flex min-h-1 justify-end h-1 w-full bg-[#c4c4c4]">
+                    <span class="w-[50%] h-full rounded-2xl bg-[#5f5f5f]"></span>
+                </div>
+                <div class="bg-[#D9D9D9] p-5 rounded-3xl w-90">
+                    <p class="text-[#6B6B6B] font-bold text-xl">
+                        Elles Ont Besoin De Certaines Matiéres Minérales Spécifiques Pour Leur Croissance, Que Notre Systeme <span class="text-black">STROMA</span> Est Capable De Détecter Et De Mesurer.
+                    </p>
+                </div>
+            </div>
+            <div class="h-[60%] flex min-h-1 flex-col gap-4 items-center">
+                <div class="flex gap-3 items-end">
+                    <a href="https://fr.wikipedia.org/wiki/Eau" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
+                        <img class="" src="assets/periodic_table/h2o.png" alt="">
+                    </a>
+                    <h3 class="text-3xl font-bold">L'eau</h3>
+                </div>
+                <!-- Silly top line thingy, -->
+                <div class="flex justify-end h-1 w-full bg-[#c4c4c4]">
+                    <span class="w-[50%] h-full rounded-2xl bg-[#5f5f5f]"></span>
+                </div>
+                <div class="bg-[#D9D9D9] p-5 rounded-3xl w-90">
+                    <p class="text-[#6B6B6B] font-bold text-xl">
+                        Chaque plante a besoin d’une quantité d’eau précise pour 
+                        croître sainement. 
+                        L’eau joue un rôle essentiel 
+                        dans le transport des nutriments, la photosynthèse et la régulation thermique. 
+                        Le système <span class="text-black " >STROMA</span> peut mesurer l’humidité du sol et partager avec vous les besoins hydriques exacts de la plante.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
