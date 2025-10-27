@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* AHahaha c'est marant, un truc qui marche native sur Firefox🦊 necesite une fonction a la con sur "chrome" bruuuuh*/
+/* Classe pour corriger ça ⬇️ */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

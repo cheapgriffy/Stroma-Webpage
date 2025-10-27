@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- audiowide, poppins, roboto summons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+<body class="font-[Roboto]">
+
+    <!-- Static planet background, normally in header bg -->
+    <!-- bg-[url(/assets/World.png)] -->
+
+    <header class="bg-no-repeat bg-center bg-contain flex flex-col w-full h-screen">
+
+        <span class="absolute top-70 -z-10 bg-gray-400/20 blur-2xl w-full h-150"></span>
+        <nav id="navbar" class="w-full h-30 flex gap-10 justify-around p-4">
+            <div class="w-130 flex items-center gap-4">
+                <img src="assets/Stroma_Logo_cropped.png" alt="Stroma Logo" class="w-18 h-auto ml-4">
+                <h3 class="font-[audiowide] text-3xl">STROMA</h3>
+            </div>
+            <div class="w-300 flex justify-center items-center gap-14 font-[Roboto] text-xl">
+                <!-- TODO Ajouter les liens -->
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Solutions</p></a>
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Fonctionnement</p></a>
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Application</p></a>
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Support</p></a>
+            </div>
+            <div class="w-130 flex justify-center items-center">
+                <button class="bg-[#292929] text-white rounded-4xl p-4 px-8 font-[Roboto] transition-all duration-150  hover:shadow-lg hover:-translate-0.5 hover:bg-white hover:text-black hover:border-2 hover:font-bold">S'inscrire Maintenant</button>
+            </div>
+        </nav>
+
+        <!-- color of text = bg-gradient, is clipped || cant do gradient on base text color -->
+        <!-- par contre la vie de oim je pisse sur ceux qui on decider que webkit devait étre different. j'vous lache le meilleur coulis de redbull sponso par ma vessie en sah -->
+        <div class="h-90 flex justify-center items-end                                        
+        text-[300px] max-[1530px]:text-[200px] transition-all font-bold font-[Roboto] tracking-[40px] text-black/80
+        bg-gradient-to-b from-[#111112] via-[#111112]/80 to-transparent
+        bg-clip-text mix-blend-screen select-none">
+            <!-- TODO faut fix le blend mode, ça va pas tres bien avec le nouveau planet background -->
+            <h1 id="stroma_title" class="relative top-20">STROMA</h1>
+        </div>
+
+        <div id="hero_down_div" class=" flex h-full font-[Roboto] bg-[url(/assets/line_white.png)] bg-position-[center_bottom] bg-no-repeat bg-contain">
+            <div class=" w-full flex flex-col justify-between font-bold text-3xl max-[1530px]:text-xl">
+                <div class=" p-4 px-24 h-auto ">
+                    <h4 class="pl-1">Données Des Plantes <br> En Temps Réel.</h4>
+                    <h4 class="text-gray-500 pl-1">Programmation <br> Automatique, <br> Alerte Fuite & Sécheresse.</h4>
+                    <h4 class="pl-1">Arrosage Rapide.</h4>
+                    <button class="border-gray-600 border-1 bg-white/90 backdrop-blur-2xl text-gray-600 rounded-4xl mt-5 p-2 px-5 font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5"> Voir Plus De Détails</button>
+                </div>
+                <div class=" flex justify-center max-[1530px]:scale-70 items-center h-auto flex-nowrap">
+                    <p class="font-normal text-[100px] pr-8 text-nowrap">40% +</p> 
+                    <h4>Eau Économisée <br> En Moyenne <br> Avec STROMA </h4>
+                </div>
+            </div>
+            <div class="w-full h-110 flex flex-col justify-center items-center">
+                <button class="relative top-95 z-1 bg-[#2b2b2b]/70 backdrop-blur-2xl rounded-4xl mt-5 p-2 px-5 text-white font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5">Commencer Gratuitement</button>
+                <img id="plants" class="w-[85%] relative bottom-15" src="assets/plants.png" alt="Multiple plants with white stylised pots">
+            </div>
+            <div class=" w-full font-bold flex flex-col items-center">
+                <div>
+                    <h4 class="w-50 text-3xl">La Nature, Protégée Par Nos Codes</h4>
+                    <h5 class="text-gray-500 text-2xl" >Avenir, Nature, Technologie</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay div, containing masked plane on the planet (can be move from js by editing mask-position) -->
+        <div id="planet_div" class="-z-10 absolute h-screen w-full flex justify-center
+        bg-[url(/assets/planet/Globe_Component.png)] bg-contain bg-center bg-no-repeat">
+            <img id="planet_image" class="mask-[url(/assets/planet/Map_Plane.png)] [mask-size:300%] [mask-position:0px]" src="assets/planet/Globe Component_mask.png" alt="">
+            <span id="night_darken" class="absolute w-full h-full -z-20"></span>
+        </div>
+    </header>
+
+    <section class="py-15 h-screen flex gap-5 justify-center bg-white">
+        <div class="w-[31%] flex flex-col justify-around">
+            <div class="flex flex-col items-center text-justify h-[32%] rounded-tl-2xl rounded-bl-2xl text-xl">
+                <!-- Silly top line thingy, -->
+                <div class="flex h-1 w-full bg-[#c4c4c4]">
+                    <span class="w-[45%] h-full rounded-2xl bg-[#5f5f5f]"></span>
+                </div>
+                <div class="flex">
+                    <a href="https://fr.wikipedia.org/wiki/Azote" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
+                        <img class="scale-100" src="assets/periodic_table/nitrogen.png" alt="">
+                    </a>
+                    <p class="p-5 w-[90%] border-[#5f5f5f]"><strong>L’azote</strong> <br> est 
+                    l’un des éléments les plus importants 
+                    pour la croissance des plantes, 
+                    car il participe à la formation de 
+                    la chlorophylle et des protéines. 
+                    Il favorise une croissance rapide 
+                    et vigoureuse des feuilles et 
+                    des tiges. 
+                    Lorsque le sol manque d’azote, 
+                    la plante perd sa couleur verte 
+                    et sa croissance ralentit.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center text-justify h-[32%] text-xl">
+                <!-- Silly top line thingy, -->
+                <div class="flex h-1 w-full bg-[#c4c4c4]">
+                    <span class="w-[45%] h-full rounded-2xl bg-[#5f5f5f]"></span>
+                </div>
+                <div class="flex">
+                    <a href="https://fr.wikipedia.org/wiki/Phosphore" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
+                        <img class="scale-100" src="assets/periodic_table/phosphore.png" alt="">
+                    </a>
+                    <p class="p-5 w-[90%] border-[#5f5f5f]"><strong>Le phosphore</strong> <br>
+                    est essentiel au développement des racines, 
+                    à la floraison et à la formation des fruits. 
+                    Il joue un rôle clé dans 
+                    le transfert d’énergie à l’intérieur 
+                    des cellules végétales et aide la plante 
+                    à développer un système racinaire 
+                    fort au début de sa croissance, 
+                    ainsi qu’à disposer de l’énergie nécessaire 
+                    lors de la floraison.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center text-justify h-[32%] text-xl">
+                <!-- Silly top line thingy, -->
+                <div class="flex h-1 w-full bg-[#c4c4c4]">
+                    <span class="w-[45%] h-full rounded-2xl bg-[#5f5f5f]"></span>
+                </div>
+                <div class="flex">
+                    <a href="https://fr.wikipedia.org/wiki/Potassium" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
+                        <img class="scale-100" src="assets/periodic_table/pottasium.png" alt="">
+                    </a>
+                    <p class="p-5 w-[90%] border-[#5f5f5f]"><strong>Le potassium</strong> <br>
+                    régule l’équilibre hydrique dans les cellules 
+                    de la plante et la rend plus résistante 
+                    à la sécheresse, au froid et aux maladies. 
+                    Il améliore également la qualité des fleurs 
+                    et des fruits, tout en renforçant les tiges.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-[31%] flex flex-col">
+            <h4 class="text-center bg">plante</h4>
+            <img class="object-contain -translate-x-10" src="assets/showcase.png" alt="">
+        </div>
+
+        <div class="w-[31%] flex flex-col justify-center gap-8">
+            <div class="h-[35%]"></div>
+            <div class="h-[50%]"></div>
+        </div>
+    </section>
+
+
+    <script type="module" src="/script/script.js"></script>
+</body>
+</html>
