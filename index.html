@@ -10,25 +10,26 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <!-- audiowide, poppins, roboto summons -->
+    <!-- audiowide, poppins, roboto, and outfit summons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
 <body class="font-[Roboto]">
 
     <!-- Static planet background, normally in header bg -->
     <!-- bg-[url(/assets/World.png)] -->
 
-    <header class="bg-no-repeat bg-center bg-contain flex flex-col w-full h-screen">
+    <header class="bg-no-repeat bg-center bg-contain flex flex-col w-full h-screen max-[1540px]:h-[110vh]">
 
         <span class="absolute top-70 -z-10 bg-gray-400/20 blur-2xl w-full h-150"></span>
         <nav id="navbar" class="w-full h-30 flex gap-10 justify-around p-4">
+
             <div class="w-130 flex items-center gap-4">
                 <img src="assets/Stroma_Logo_cropped.png" alt="Stroma Logo" class="w-18 h-auto ml-4">
                 <h3 class="font-[audiowide] text-3xl">STROMA</h3>
             </div>
+
             <div class="w-300 flex justify-center items-center gap-14 font-[Roboto] text-xl">
                 <!-- TODO Ajouter les liens -->
                 <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Solutions</p></a>
@@ -36,44 +37,50 @@
                 <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Application</p></a>
                 <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Support</p></a>
             </div>
+
             <div class="w-130 flex justify-center items-center">
                 <button class="bg-[#292929] text-white rounded-4xl p-4 px-8 font-[Roboto] transition-all duration-150  hover:shadow-lg hover:-translate-0.5 hover:bg-white hover:text-black hover:border-2 hover:font-bold">S'inscrire Maintenant</button>
             </div>
+
         </nav>
 
         <!-- color of text = bg-gradient, is clipped || cant do gradient on base text color -->
         <!-- par contre la vie de oim je pisse sur ceux qui on decider que webkit devait étre different. j'vous lache le meilleur coulis de redbull sponso par ma vessie en sah -->
         <div class="h-90 flex justify-center items-end                                        
-        text-[300px] max-[1530px]:text-[200px] transition-all font-bold font-[Roboto] tracking-[40px] text-black/80
-        bg-gradient-to-b from-[#111112] via-[#111112]/80 to-transparent
+        text-[300px] max-[1540px]:text-[200px] transition-all font-bold font-[Roboto] tracking-[40px] text-black/80
+        bg-linear-to-b from-[#111112] via-[#111112]/80 to-transparent
         bg-clip-text mix-blend-screen select-none">
             <!-- TODO faut fix le blend mode, ça va pas tres bien avec le nouveau planet background -->
             <h1 id="stroma_title" class="relative top-20">STROMA</h1>
         </div>
 
-        <div id="hero_down_div" class=" flex h-full font-[Roboto] bg-[url(/assets/line_white.png)] bg-position-[center_bottom] bg-no-repeat bg-contain">
-            <div class=" w-full flex flex-col justify-between font-bold text-3xl max-[1530px]:text-xl">
+        <div id="hero_down_div" class=" flex h-full font-[Roboto] bg-[url(/assets/line_white.png)] bg-position-[center_bottom] bg-no-repeat bg-contain ">
+
+            <div class=" w-full flex flex-col justify-between font-bold text-3xl max-[1540px]:text-xl">
                 <div class=" p-4 px-24 h-auto ">
                     <h4 class="pl-1">Données Des Plantes <br> En Temps Réel.</h4>
                     <h4 class="text-gray-500 pl-1">Programmation <br> Automatique, <br> Alerte Fuite & Sécheresse.</h4>
                     <h4 class="pl-1">Arrosage Rapide.</h4>
-                    <button class="border-gray-600 border-1 bg-white/90 backdrop-blur-2xl text-gray-600 rounded-4xl mt-5 p-2 px-5 font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5"> Voir Plus De Détails</button>
+                    <button class="border-gray-600 border bg-white/90 backdrop-blur-2xl text-gray-600 rounded-4xl mt-5 p-2 px-5 font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5"> Voir Plus De Détails</button>
                 </div>
-                <div class=" flex justify-center max-[1530px]:scale-70 items-center h-auto flex-nowrap">
+                <div class=" flex justify-center max-[1540px]:scale-70 items-center h-auto flex-nowrap">
                     <p class="font-normal text-[100px] pr-8 text-nowrap">40% +</p> 
                     <h4>Eau Économisée <br> En Moyenne <br> Avec STROMA </h4>
                 </div>
             </div>
+
             <div class="w-full h-110 flex flex-col justify-center items-center">
                 <button class="relative top-95 z-1 bg-[#2b2b2b]/70 backdrop-blur-2xl rounded-4xl mt-5 p-2 px-5 text-white font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5">Commencer Gratuitement</button>
                 <img id="plants" class="w-[85%] relative bottom-15" src="assets/plants.png" alt="Multiple plants with white stylised pots">
             </div>
+
             <div class=" w-full font-bold flex flex-col items-center">
                 <div>
                     <h4 class="w-50 text-3xl">La Nature, Protégée Par Nos Codes</h4>
                     <h5 class="text-gray-500 text-2xl" >Avenir, Nature, Technologie</h5>
                 </div>
             </div>
+
         </div>
 
         <!-- Overlay div, containing masked plane on the planet (can be move from js by editing mask-position) -->
@@ -84,9 +91,10 @@
         </div>
     </header>
 
-    <section class="py-15 h-screen flex gap-5 justify-center bg-white">
+    <section class="py-15 h-screen flex gap-5 justify-center bg-white ">
         <div class="w-[31%] flex flex-col justify-around">
-            <div class="flex flex-col items-center text-justify h-[32%] rounded-tl-2xl rounded-bl-2xl text-xl">
+
+            <div class="flex flex-col justify-center items-center text-justify h-[32%] rounded-tl-2xl rounded-bl-2xl text-xl max-[1540px]:text-base">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
                     <span class="w-[45%] h-full rounded-2xl bg-[#5f5f5f]"></span>
@@ -95,7 +103,7 @@
                     <a href="https://fr.wikipedia.org/wiki/Azote" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
                         <img class="scale-100" src="assets/periodic_table/nitrogen.png" alt="">
                     </a>
-                    <p class="p-5 w-[90%] border-[#5f5f5f]"><strong>L’azote</strong> <br> est 
+                    <p class="p-5 w-[90%] border-[#5f5f5f] "><strong>L’azote</strong> <br> est 
                     l’un des éléments les plus importants 
                     pour la croissance des plantes, 
                     car il participe à la formation de 
@@ -109,10 +117,11 @@
                     </p>
                 </div>
             </div>
-            <div class="flex flex-col items-center text-justify h-[32%] text-xl">
+
+            <div class=" flex flex-col items-center text-justify h-[33%] text-xl max-[1540px]:text-base">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
-                    <span class="w-[45%] h-full rounded-2xl bg-[#5f5f5f]"></span>
+                    <span class="w-[45%] min-h-1 h-full rounded-2xl bg-[#5f5f5f]"></span>
                 </div>
                 <div class="flex">
                     <a href="https://fr.wikipedia.org/wiki/Phosphore" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
@@ -131,10 +140,11 @@
                     </p>
                 </div>
             </div>
-            <div class="flex flex-col items-center text-justify h-[32%] text-xl">
+            
+            <div class="flex flex-col items-center text-justify h-[32%] text-xl max-[1540px]:text-base">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
-                    <span class="w-[45%] h-full rounded-2xl bg-[#5f5f5f]"></span>
+                    <span class="w-[45%] min-h-1 h-full rounded-2xl bg-[#5f5f5f]"></span>
                 </div>
                 <div class="flex">
                     <a href="https://fr.wikipedia.org/wiki/Potassium" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
@@ -151,14 +161,48 @@
             </div>
         </div>
 
-        <div class="w-[31%] flex flex-col">
-            <h4 class="text-center bg">plante</h4>
-            <img class="object-contain -translate-x-10" src="assets/showcase.png" alt="">
+        <div class="w-[31%] flex flex-col items-center">
+            <h4 class="text-xl font-[Outfit]">Plante</h4>
+            <img class="object-contain -translate-x-12" src="assets/showcase.png" alt="">
         </div>
 
         <div class="w-[31%] flex flex-col justify-center gap-8">
-            <div class="h-[35%]"></div>
-            <div class="h-[50%]"></div>
+
+            <div class="h-[35%] flex flex-col gap-3 items-center">
+                <h3 class="font-bold text-3xl w-80">Que savons-nous des besoins des plantes ?</h3>
+                <!-- Silly top line thingy, -->
+                <div class="flex min-h-1 justify-end h-1 w-full bg-[#c4c4c4]">
+                    <span class="w-[50%] h-full rounded-2xl bg-[#5f5f5f]"></span>
+                </div>
+                <div class="bg-[#D9D9D9] p-5 rounded-3xl w-90">
+                    <p class="text-[#6B6B6B] font-bold text-xl">
+                        Elles Ont Besoin De Certaines Matiéres Minérales Spécifiques Pour Leur Croissance, Que Notre Systeme <span class="text-black">STROMA</span> Est Capable De Détecter Et De Mesurer.
+                    </p>
+                </div>
+            </div>
+
+            <div class="h-[60%] flex min-h-1 flex-col gap-4 items-center">
+                <div class="flex gap-3 items-end">
+                    <a href="https://fr.wikipedia.org/wiki/Eau" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
+                        <img class="" src="assets/periodic_table/h2o.png" alt="">
+                    </a>
+                    <h3 class="text-3xl font-bold">L'eau</h3>
+                </div>
+                <!-- Silly top line thingy, -->
+                <div class="flex justify-end h-1 w-full bg-[#c4c4c4]">
+                    <span class="w-[50%] h-full rounded-2xl bg-[#5f5f5f]"></span>
+                </div>
+                <div class="bg-[#D9D9D9] p-5 rounded-3xl w-90">
+                    <p class="text-[#6B6B6B] font-bold text-xl">
+                        Chaque plante a besoin d’une quantité d’eau précise pour 
+                        croître sainement. 
+                        L’eau joue un rôle essentiel 
+                        dans le transport des nutriments, la photosynthèse et la régulation thermique. 
+                        Le système <span class="text-black " >STROMA</span> peut mesurer l’humidité du sol et partager avec vous les besoins hydriques exacts de la plante.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </section>
 <section class="bg-gray-200 py-16 md:py-24 relative overflow-hidden">
@@ -239,7 +283,6 @@
     <img class="flex justify-self-center" src="assets/seperator.png" alt="">
 </section>
 
-    <script type="module" src="/script/script.js"></script>
     
     <footer class="bg-gray-200 text-gray-700 pt-10 pb-5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -248,7 +291,7 @@
             <div class="flex flex-col items-start space-y-4 md:col-span-1">
                 <div class="text-2xl font-extrabold text-gray-800 flex flex-col items-start">
                     <img class="mr-5 w-15" src="assets/logo.png">
-             </div>
+            </div>
                 <div class="flex space-x-4 text-xl">
                 <a href="" target="_blank" class="transition-all hover:scale-110">
                 <img class="w-6 h-6" src="assets/twitter.png" alt="Twitter">
@@ -258,7 +301,7 @@
             </div>
             </div>
             <div class="md:col-span-1 text-sm text-center md:text-left">
-                 <p class="max-w-xs mx-auto md:mx-0 leading-snug">
+                <p class="max-w-xs mx-auto md:mx-0 leading-snug">
                     Téléchargez notre application et gardez le contrôle, où que vous soyez. Profitez de toutes les fonctionnalités directement depuis votre smartphone. Disponible dès maintenant sur App Store et Google Play – simple, rapide et pratique, tout ce dont vous avez besoin.
                 </p>
             </div>
@@ -337,8 +380,9 @@
                 <span>Propulsé par la nature.</span>
             </div>
         </div>
-
+        <script type="module" src="script/script.js"></script>
     </div>
     </footer>
+    <script type="module" src="/script/script.js"></script>
 </body>
 </html>
