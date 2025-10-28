@@ -23,25 +23,42 @@
     <header class="bg-no-repeat bg-center bg-contain flex flex-col w-full h-screen max-[1540px]:h-[110vh]">
 
         <span class="absolute top-70 -z-10 bg-gray-400/20 blur-2xl w-full h-150"></span>
-        <nav id="navbar" class="w-full h-30 flex gap-10 justify-around p-4">
+        <nav id="navbar" class="w-full h-30 flex max-[1380px]:gap-0 min-[1379px]:justify-around p-4">
 
             <div class="w-130 flex items-center gap-4">
                 <img src="assets/Stroma_Logo_cropped.png" alt="Stroma Logo" class="w-18 h-auto ml-4">
                 <h3 class="font-[audiowide] text-3xl">STROMA</h3>
             </div>
 
-            <div class="w-300 flex justify-center items-center gap-14 font-[Roboto] text-xl">
+            <div class="w-300 flex justify-center items-center gap-14 font-[Roboto] text-xl min-[1380px]:flex max-[1379px]:hidden">
                 <!-- TODO Ajouter les liens -->
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Solutions</p></a>
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Fonctionnement</p></a>
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Application</p></a>
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Support</p></a>
+                <a href="#" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Solutions</p></a>
+                <a href="#" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Fonctionnement</p></a>
+                <a href="#" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Application</p></a>
+                <a href="#" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Support</p></a>
             </div>
-
-            <div class="w-130 flex justify-center items-center">
-                <button class="bg-[#292929] text-white rounded-4xl p-4 px-8 font-[Roboto] transition-all duration-150  hover:shadow-lg hover:-translate-0.5 hover:bg-white hover:text-black hover:border-2 hover:font-bold">S'inscrire Maintenant</button>
+            <div class="flex items-center">
+                <div class="flex justify-center items-center max-[1380]:w-50 min-[1380px]:w-100">
+                    <button class="bg-[#292929] text-white rounded-4xl p-4 px-8 font-[Roboto] transition-all duration-150  hover:shadow-lg hover:-translate-0.5 hover:bg-white hover:text-black hover:border-2 hover:font-bold">S'inscrire Maintenant</button>
+                </div>
+                
+                <div class="inline-block max-[1380px]:block min-[1379px]:hidden relative">
+                    <button id="dropdown-button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold inset-ring-1 inset-ring-white/5 hover:bg-white/20" aria-expanded="false" aria-controls="user-menu">
+                        
+                        <img src="assets/icon/icon-menu-handburger.png" alt="" class="scale-120">
+                        
+                        </button>
+                    
+                    <div id="user-menu" class="absolute z-10 right-0 w-56 mt-2 origin-top-right rounded-md bg-white outline-1 -outline-offset-1 outline-black/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in" data-closed="">
+                        <div class="py-1">
+                            <a href="#" class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden">Solutions</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden">Fonctionnement</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden">Application</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden">Support</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </nav>
 
         <!-- color of text = bg-gradient, is clipped || cant do gradient on base text color -->
@@ -210,6 +227,7 @@
         <h4 class="font-[Outfit] text-xl text-center">Les composants constitutifs</h4>
         <img class="relative bottom-5" src="assets/line.png" alt="">
         
+        <div id="stroma2.0_poppup" class="bg-[#D9D9D9] w-70 h-100 rounded-2xl border-2 border-[#888888] flex flex-col gap-2 p-5 font-[poppins] translate-x-[80vw] -translate-y-10 shadow-2xl">
         <div id="stroma2.0_poppup" class="bg-[#D9D9D9] w-70 h-100 rounded-2xl border-2 border-[#888888]
         flex flex-col gap-2 p-5 font-[poppins]
         translate-x-[80vw] -translate-y-20 shadow-2xl">
