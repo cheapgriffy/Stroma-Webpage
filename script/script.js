@@ -21,10 +21,7 @@ window.onscroll = () =>
 {
     // Convert scroll px to %
     let scroll_ratio = (window.scrollY / scrollable_height) * 100;
-    console.log(scroll_ratio)
-
-
-    console.log("[mask-position:"+window.scrollY+"px]")
+    
     planet_mask.style.maskPosition = "-" + window.scrollY + "px"
     stroma_title.style.translate = "0px "+ window.scrollY/4+"px"
     
