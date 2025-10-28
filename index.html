@@ -161,7 +161,148 @@
             <div class="h-[50%]"></div>
         </div>
     </section>
-<section class="bg-gray-200 py-16 md:py-24 relative overflow-hidden">
+    <section class="bg-gray-400/20 py-16 md:py-24 >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-16">
+            <div class="inline-block px-4 py-1 mb-6 text-xs font-bold uppercase tracking-widest text-black bg-gray-300 rounded-full">
+                Fonctionnement du système STROMA
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+                Comment fonctionne le capteur STROMA ?
+            </h1>
+            <div class="inline-block bg-gray-100 px-6 py-3 rounded-xl shadow-inner mb-8">
+                <h2 class="text-xl font-semibold text-gray-800">
+                    Fonctionnement du système STROMA
+                </h2>
+            </div>
+            <p class="text-gray-800 max-w-3xl mx-auto">
+                Le capteur STROMA fonctionne grâce à une combinaison de capteurs d'humidité, d'un microcontrôleur et d'un système de communication intelligent. Il mesure en temps réel le niveau d'eau présent dans le sol, analyse les données et envoie une notification à l'utilisateur lorsqu'un manque d'eau est détecté. En résumé, il observe, analyse et alerte.
+            </p>
+        </div>
+
+        <div class="relative grid grid-cols-6 gap-x-2 lg:gap-x-4 mb-20 items-center justify-center">
+            
+            <div class="col-span-2 md:col-span-1 flex flex-col items-center">
+                <div class="w-28 h-28 bg-gray-300/20 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+                    <span class="rotate-45 font-medium text-gray-900">Détection</span>
+                </div>
+            </div>
+            
+            <div class="col-span-2 md:col-span-1 flex flex-col items-center">
+                <div class="w-28 h-28 bg-gray-300/20 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+                    <span class="rotate-45 font-medium text-gray-900">Analyse</span>
+                </div>
+            </div>
+
+            <div class="col-span-2 md:col-span-1 flex flex-col items-center">
+                <div class="w-28 h-28 bg-gray-300/20 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+                    <span class="rotate-45 font-medium text-gray-900">Conversion</span>
+                </div>
+            </div>
+            
+            <div class="col-span-3 md:col-span-1 flex flex-col items-center mt-8 md:mt-0">
+                <div class="w-28 h-28 bg-gray-300/20 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+                    <span class="rotate-45 font-medium text-gray-900">Alerte</span>
+                </div>
+            </div>
+            
+            <div class="col-span-3 md:col-span-1 flex flex-col items-center mt-8 md:mt-0">
+                <div class="w-28 h-28 bg-gray-300/20 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+                    <span class="rotate-45 font-medium text-gray-900">Transmission</span>
+                </div>
+            </div>
+
+            <div class="col-span-6 md:col-span-1 flex flex-col items-center mt-8 md:mt-0">
+                <div class="w-28 h-28 bg-gray-300/20 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+                    <span class="rotate-45 font-medium text-gray-900">Notification</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 m-7">
+            
+            <div class="bg-gray-800/20 p-6 rounded-xl shadow-xl border border-gray-400">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/zoom-question.png">
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-900">Détection</h3>
+                </div>
+                <p class="text-sm text-gray-800">
+                    Le capteur d'humidité du sol mesure la quantité d'eau présente dans la terre. Lorsque l'humidité descend en dessous d'un seuil défini, le capteur enregistre cette variation.
+                </p>
+            </div>
+            
+            <div class="bg-gray-800/20 p-6 rounded-xl shadow-xl border border-gray-400">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/transform.png">
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-900">Conversion</h3>
+                </div>
+                <p class="text-sm text-gray-800">
+                    Les données brutes (tension ou résistance du sol) sont transformées en signaux électriques par le circuit de conversion. Les signaux sont ensuite traduits en valeurs numériques afin que le microcontrôleur puisse les analyser.
+                </p>
+            </div>
+
+            <div class="bg-gray-800/20 p-6 rounded-xl shadow-xl border border-gray-400">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/report-analytics.png">
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-900">Analyse</h3>
+                </div>
+                <p class="text-sm text-gray-800">
+                    Le microcontrôleur compare la valeur reçue avec le seuil de décision prédéfini (manque d'eau). Si l'humidité est inférieure à ce seuil, le système conclut qu'il y a un manque d'eau.
+                </p>
+            </div>
+            
+            <div class="bg-gray-800/20 p-6 rounded-xl shadow-xl border border-gray-400">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/alert-triangle.png">
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-900">Alerte</h3>
+                </div>
+                <p class="text-sm text-gray-800">
+                    Une fois le manque d'eau décelé, une alerte interne est générée. Cette alerte peut se manifester sous forme d'un signal lumineux, sonore ou de message interne.
+                </p>
+            </div>
+            
+            <div class="bg-gray-800/20 p-6 rounded-xl shadow-xl border border-gray-400">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/transition-top.png">
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-900">Transmission</h3>
+                </div>
+                <p class="text-sm text-gray-800">
+                    Les données sont transmises au smartphone ou au réseau via des protocoles sans fil (Bluetooth, Wi-Fi, ou niveau RIF). À ce stade, les informations circulent sous forme de messages numériques ou de données API.
+                </p>
+            </div>
+
+            <div class="bg-gray-800/20 p-6 rounded-xl shadow-xl border border-gray-400">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/bell-ringing.png">
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-900">Notification</h3>
+                </div>
+                <p class="text-sm text-gray-800">
+                    L'application mobile reçoit une notification push que l'utilisateur peut consulter. L'utilisateur peut alors consulter le niveau d'humidité précis et recevoir des recommandations pour le prochain arrosage.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="p-9 bg-gray-400/20">
+    <img class="flex justify-self-center" src="assets/seperator.png" alt="">
+</section>
+
+<section class="bg-gray-400/20  py-16 md:py-24 relative overflow-hidden">
     
     <div class="absolute inset-0 z-0">
         <div class="absolute inset-0" 
@@ -235,13 +376,13 @@
         
     </div>
 </section>
-<section class="p-9 bg-gray-200">
+<section class="p-9 bg-gray-400/20">
     <img class="flex justify-self-center" src="assets/seperator.png" alt="">
 </section>
 
     <script type="module" src="/script/script.js"></script>
     
-    <footer class="bg-gray-200 text-gray-700 pt-10 pb-5">
+    <footer class="bg-gray-400/20  text-gray-700 pt-10 pb-5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 items-center">
