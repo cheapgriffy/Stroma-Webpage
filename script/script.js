@@ -6,6 +6,9 @@ const plants = document.getElementById("plants")
 const navbar = document.getElementById("navbar")
 const night_darken = document.getElementById("night_darken")
 
+const height = document.documentElement.clientHeight;
+const width = document.documentElement.clientWidth;
+
 const scrollable_height = document.documentElement.scrollHeight - window.innerHeight;
 
 // calls once page loaded (the heck is jquery jeeez, everywhere i try to see a equivalent to that)
