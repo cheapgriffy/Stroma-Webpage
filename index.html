@@ -6,6 +6,19 @@
     <title>Homepage</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .triangle-right {
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 10px solid black; 
+        }
+    </style>
     <link rel="stylesheet" href="/style/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -181,43 +194,50 @@
             </p>
         </div>
 
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         <div class="relative grid grid-cols-6 gap-x-2 lg:gap-x-4 mb-20 items-center justify-center p-10">
-
-            <div class="col-span-2 md:col-span-1 flex flex-col items-center -translate-y-10">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400  border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+            
+            <div class="absolute w-full h-1 bg-gray-400 top-1/2 left-0 transform -translate-y-1/2 z-0 hidden md:block"></div>
+            
+            <div class="absolute top-1/2 -translate-y-1/2 z-10 hidden md:block triangle-right" style="left: calc(16.66% + 1.33%);"></div> 
+            <div class="absolute top-1/2 -translate-y-1/2 z-10 hidden md:block triangle-right" style="left: calc(33.33% + 1.33%);"></div> 
+            <div class="absolute top-1/2 -translate-y-1/2 z-10 hidden md:block triangle-right" style="left: calc(50% + 0.33%);"></div>   
+            <div class="absolute top-1/2 -translate-y-1/2 z-10 hidden md:block triangle-right" style="left: calc(66.66% + 0.33%);"></div> 
+            <div class="absolute top-1/2 -translate-y-1/2 z-10 hidden md:block triangle-right" style="left: calc(80.33% + 0.00%);"></div> 
+            
+            <div class="col-span-2 md:col-span-1 flex flex-col items-center -translate-y-10 z-20">
+                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
                     <span class="rotate-45 font-medium text-gray-900">Détection</span>
                 </div>
             </div>
-
-            <div class="col-span-2 md:col-span-1 flex flex-col items-center translate-y-10">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400   border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+            <div class="col-span-2 md:col-span-1 flex flex-col items-center translate-y-10 z-20">
+                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
                     <span class="rotate-45 font-medium text-gray-900">Analyse</span>
                 </div>
             </div>
-
-            <div class="col-span-2 md:col-span-1 flex flex-col items-center -translate-y-10">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400   border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+            <div class="col-span-2 md:col-span-1 flex flex-col items-center -translate-y-10 z-20">
+                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
                     <span class="rotate-45 font-medium text-gray-900">Conversion</span>
                 </div>
             </div>
-
-            <div class="col-span-3 md:col-span-1 flex flex-col items-center mt-8 md:mt-0 translate-y-10  ">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400   border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+            <div class="col-span-3 md:col-span-1 flex flex-col items-center mt-8 md:mt-0 translate-y-10 z-20">
+                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
                     <span class="rotate-45 font-medium text-gray-900">Alerte</span>
                 </div>
             </div>
-
-            <div class="col-span-3 md:col-span-1 flex flex-col items-center mt-8 md:mt-0 -translate-y-10">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400   border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+            <div class="col-span-3 md:col-span-1 flex flex-col items-center mt-8 md:mt-0 -translate-y-10 z-20">
+                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
                     <span class="rotate-45 font-medium text-gray-900">Transmission</span>
                 </div>
             </div>
-
-            <div class="col-span-6 md:col-span-1 flex flex-col items-center mt-8 md:mt-0 translate-y-10">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400   border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
+            <div class="col-span-6 md:col-span-1 flex flex-col items-center mt-8 md:mt-0 translate-y-10 z-20">
+                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45 mb-4">
                     <span class="rotate-45 font-medium text-gray-900">Notification</span>
                 </div>
             </div>
+        </div>
+
         </div>
 
 
