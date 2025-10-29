@@ -50,7 +50,6 @@
         text-[300px] max-[1540px]:text-[200px] transition-all font-bold font-[Roboto] tracking-[40px] text-black/80
         bg-linear-to-b from-[#111112] via-[#111112]/80 to-transparent
         bg-clip-text mix-blend-screen select-none">
-            <!-- TODO faut fix le blend mode, ça va pas tres bien avec le nouveau planet background -->
             <h1 id="stroma_title" class="relative top-20">STROMA</h1>
         </div>
 
@@ -212,30 +211,28 @@
         <img class="relative bottom-5" src="assets/line.png" alt="">
         
         <div id="stroma2.0_poppup" class="bg-[#D9D9D9] w-70 h-100 rounded-2xl border-2 border-[#888888]
-        flex flex-col gap-2 p-5 font-[poppins]
-        translate-x-[80vw] -translate-y-20 shadow-2xl">
-            <div>
-                
-            </div>
+            flex flex-col gap-2 p-5 font-[poppins]
+            translate-x-[80vw] -translate-y-20 shadow-2xl">
+
             <img class="rotate-25 scale-80 -translate-y-50" src="assets/capteur.png" alt="">
             <p class="text-gray-500 -translate-y-55">Capteur inteligents</p>
             <div class="-translate-y-55 flex gap-10 text-2xl">
                 <h5>Stroma 0.2</h5>
                 <p>></p>
             </div>
-            <button class="text-center w-30 py-1 border-2 rounded-lg font-semibold -translate-y-50 animation-all duration-200 hover:scale-105 hover:bg-black/50 hover:text-white ">Acheter</button>
+            <button id="goober" class="text-center w-30 py-1 border-2 rounded-lg font-semibold -translate-y-50 animation-all duration-200 hover:scale-105 hover:bg-black/50 hover:text-white ">Acheter</button>
         </div>
 
         <div class="bg-[#D9D9D9] w-100 p-5 rounded-2xl -translate-y-120 translate-x-10">
             <h4 class="font-bold text-center text-2xl">Quels sont les composants <br> internes du STROMA 0.2?</h4>
         </div>
 
-        <!-- TODO C'est la partie la ou tu est griffy -->
-        <div class="absolute flex justify-center w-full h-screen -translate-y-130">
-            <div>
-                <span class="absolute left-0 -z-10 bg-gray-400/20  blur-2xl w-[25vw] h-300"></span>
-                <span class="absolute right-0 -z-10 bg-gray-400/20  blur-2xl w-[25vw] h-300"></span>
-            </div>
+
+        <div class="absolute flex justify-center w-full h-screen -z-10 -translate-y-130">
+            
+            <span class="absolute left-0  bg-gray-400/20  blur-2xl w-[25vw] h-300"></span>
+            <span class="absolute right-0  bg-gray-400/20  blur-2xl w-[25vw] h-300"></span>
+            
             <div class="absolute w-120 h-25 bg-[url(/assets/line_half.png)] bg-no-repeat bg-contain flex -translate-x-80 translate-y-35">
                 <h5 class="text-2xl text-center font-semibold p-10 pt-5">Revétement <br> Pricipal Du Capteur</h5>
             </div>
@@ -251,7 +248,7 @@
             <div class="absolute w-120 h-25 bg-[url(/assets/line_half_reversed.png)] bg-no-repeat bg-contain flex justify-end translate-x-100 translate-y-180">
                 <h5 class="text-2xl text-center font-semibold p-30 pt-5">Capteurs</h5>
             </div>
-            <img class="absolute h-230 w-auto" src="assets/capteur_breakdown.png" alt="">
+            <img class="absolute h-230 w-auto" src="assets/capteur_breakdown.png" alt="Capteur d'humidité, vue cassé de l'appareillage">
         </div>
 
     </section>
