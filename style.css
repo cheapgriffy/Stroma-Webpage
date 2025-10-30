@@ -8,4 +8,21 @@
     background-clip: text;
 }
 
+/* Utilisé pour l'effet poppup au scroll, doit donner block a chaque element enfant*/
+@keyframes appear{
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
 
+.fadein-on-scroll{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+  
+}
