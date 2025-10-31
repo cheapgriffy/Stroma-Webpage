@@ -16,101 +16,101 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="font-[outfit]">
-    <header class="w-screen h-screen bg-[url(assets/line_white.png)] bg-no-repeat bg-bottom bg-contain">
+<body class="font-[outfit] ">
+    <!-- TODO le responsive c'est une horeur -->
+    <header class="w-screen h-auto bg-[url(assets/line_white.png)] bg-no-repeat bg-bottom bg-contain max-xl:h-[50vh]">
         <span class="absolute top-70 -z-10 bg-gray-400/20 blur-2xl w-screen h-150 overflow-hidden"></span>
 
-        <nav id="navbar" class="w-screen h-30 flex gap-10 justify-center overflow-hidden">
+        <nav id="navbar" class="w-screen h-30 flex gap-10 justify-center overflow-hidden max-xl:h-auto max-xl:block">
             <!-- <span class="absolute bg-gray-400/60 w-200 h-200 blur-2xl rotate-45 -z-10 translate-x-150 overflow-clip"></span> -->
 
             <div class="w-130 flex items-center gap-4">
-                <img src="assets/Stroma_Logo_cropped.png" alt="Stroma Logo" class="w-18 h-auto ml-4">
-                <h3 class="font-[audiowide] text-3xl">STROMA</h3>
+                <img src="assets/Stroma_Logo_cropped.png" alt="Stroma Logo" class="w-18 h-auto ml-4 max-xl:scale-50">
+                <h3 class="font-[audiowide] text-3xl max-xl:hidden">STROMA</h3>
             </div>
-            <div class="w-280 flex justify-center items-center gap-14 font-[Roboto] text-xl">
+            <div class="w-280 flex justify-center items-center gap-14 font-[Roboto] max-xl:hidden">
                 <!-- TODO Ajouter les liens -->
                 <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Solutions</p></a>
                 <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Fonctionnement</p></a>
                 <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Application</p></a>
                 <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Support</p></a>
             </div>
-            <div class="w-130 flex justify-center items-center">
+            <div class="w-130 flex justify-center items-center max-xl:hidden">
                 <!-- La ou il y avait le bouton avant -->
             </div>
         </nav>
 
-        <div class="flex justify-center w-full h-200">
-            <h1 class="w-[60vw] text-7xl font-[Audiowide] text-center pt-50">Notre Equipe</h1>
-            <img class="w-auto h-auto" src="assets/stroma_drawed_illustration.png" alt="">
+        <div class="flex justify-center w-full h-200 max-xl:flex-col max-xl:h-[10vh]">
+            <h1 class="w-[60vw] text-7xl font-[Audiowide] text-center pt-50 max-xl:text-[8vw] max-xl:w-full">Notre Equipe</h1>
+            <img class="w-auto h-auto max-xl:absolute max-xl:opacity-20 max-xl:-z-10 max-xl:scale-50 max-xl:translate-x-[30vw] max-xl:translate-y-30" src="assets/stroma_drawed_illustration.png" alt="">
         </div>
-
     </header>
     
-    <section class="bg-white w-screen h-screen flex flex-col justify-center pt-20">
+    <section class="bg-white w-screen h-auto flex flex-col gap-5 justify-center pt-20 ">
 
-        <div class=" w-[90vw] h-[50vh] m-10 mt-3 flex justify-center items-center gap-30 fadein-on-scroll">
-            <div class=" flex flex-col  p-15 border-4 border-black/1 border-dashed rounded-4xl grid-test transition-all duration-800 hover:border-black/15 hover:shadow-2xl/5">
-                <div id="top_column" class=" flex flex-row gap-40 w-150">
+        <div class=" w-[90vw] h-auto m-10 mt-3 flex justify-center items-center gap-30 fadein-on-scroll max-xl:flex-col max-xl:gap-8 ">
+            <div class=" flex flex-col p-15 border-4 border-black/1 border-dashed rounded-4xl grid-test transition-all duration-800 hover:border-black/15 hover:shadow-2xl/5 max-xl:w-[50vw] max-xl:border-black/15">
+                <div id="top_column" class=" flex flex-row gap-40 w-150 max-xl:w-[40vw] max-lg:gap-20 max-sm:gap-5">
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/1004384013814865990/a254af8b542d3f37e9e37ad646d94793.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400">N_alinazari20</p>
+                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/1004384013814865990/a254af8b542d3f37e9e37ad646d94793.webp?size=160" alt=""></span>        
+                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">N_alinazari20</p>
                     </div>
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="assets/placeholderuser.png" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400">Dorian</p>
+                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="assets/placeholderuser.png" alt=""></span>        
+                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">Dorian</p>
                     </div>
                 </div>
-                <div id="down_column" class=" flex flex-row justify-end gap-40 w-150">
+                <div id="down_column" class=" flex flex-row justify-end gap-40 w-150 max-xl:w-[40vw] ">
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/242043041609809922/0f5a236265f74e2ab45b7e66a4c67212.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400">D<span class="text-sm">im</span></p>
+                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/242043041609809922/0f5a236265f74e2ab45b7e66a4c67212.webp?size=160" alt=""></span>        
+                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">D<span class="text-sm">im</span></p>
                     </div>
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/279714464440516619/810a640a573f2242b0b12972c26ef9e8.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400">Niightstone</p>
+                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/279714464440516619/810a640a573f2242b0b12972c26ef9e8.webp?size=160" alt=""></span>        
+                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">Niightstone</p>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col gap-5 w-250 p-10">
-                <h2 class="text-5xl font-[]">Equipe Marketing </h2>
-                <p class="text-2xl text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, distinctio aut veritatis repellat nobis nisi ipsa dolores explicabo fuga id deserunt laborum! Consequatur quos quasi dolorem, error necessitatibus autem iure.</p>
+            <div class="flex flex-col justify-center gap-5 w-250 p-10 max-xl:-order-1 max-xl:text-center max-xl:w-[90vw]">
+                <h2 class="text-5xl max-xl:text-[5vw] max-md:text-[8vw]">Equipe Marketing </h2>
+                <p class="text-2xl text-gray-400 max-xl:text-[2vw]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, distinctio aut veritatis repellat nobis nisi ipsa dolores explicabo fuga id deserunt laborum! Consequatur quos quasi dolorem, error necessitatibus autem iure.</p>
             </div>
         </div>
 
-        <div class="w-[90vw] h-[50vh] m-10 mt-3 flex justify-center items-center gap-30 fadein-on-scroll">
+        <div class="w-[90vw] h-auto m-10 mt-3 flex justify-center items-center gap-30 fadein-on-scroll max-xl:flex-col max-xl:gap-8">
             
-            <div class="flex flex-col gap-5 w-250 p-10 text-end">
+            <div class="flex flex-col gap-5 w-250 p-10 text-end max-xl:text-center">
                 <h2 class="text-5xl font-[]">Conception du site web </h2>
                 <p class="text-2xl text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, distinctio aut veritatis repellat nobis nisi ipsa dolores explicabo fuga id deserunt laborum! Consequatur quos quasi dolorem, error necessitatibus autem iure.</p>
             </div>
-            <div class=" flex flex-col  p-15 border-4 border-black/1 border-dashed rounded-4xl grid-test transition-all duration-800 hover:border-black/15 hover:shadow-2xl/5">
+            <div class=" flex flex-col  p-15 border-4 border-black/1 border-dashed rounded-4xl grid-test transition-all duration-800 hover:border-black/15 hover:shadow-2xl/5 max-xl:w-[50vw] max-xl:border-black/15">
                 <div id="top_column" class=" flex flex-row gap-40 w-150">
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/584096691473350657/8d217fd0e21f7324603be40c43771de0.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400">Cheap Griffy</p>
+                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/584096691473350657/8d217fd0e21f7324603be40c43771de0.webp?size=160" alt=""></span>        
+                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">Cheap Griffy</p>
                     </div>
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400 object-center" src="https://cdn.discordapp.com/avatars/1168719060914163812/7968133e46eb426f10e69e33099ca8cb.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400">Reyremy</p>
+                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400 object-center" src="https://cdn.discordapp.com/avatars/1168719060914163812/7968133e46eb426f10e69e33099ca8cb.webp?size=160" alt=""></span>        
+                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">Reyremy</p>
                     </div>
                 </div>
                 <div id="down_column" class=" flex flex-row justify-end gap-40 w-150">
                     <div class="group flex flex-col items-center translate-x-5 ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/775107336183480320/dc60fa55ad0814e5c75c45c91c3ef551.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400">🎃𝕿𝖍𝖊_𝕾𝖕𝖆𝖒𝖊𝖗🎃</p>
+                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/775107336183480320/dc60fa55ad0814e5c75c45c91c3ef551.webp?size=160" alt=""></span>        
+                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">🎃𝕿𝖍𝖊_𝕾𝖕𝖆𝖒𝖊𝖗🎃</p>
                     </div>
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="assets/placeholderuser.png" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400">Placeholder</p>
+                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="assets/placeholderuser.png" alt=""></span>        
+                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">Placeholder</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="w-screen h-[120vh] p-65 fadein-on-scroll">
-        <span class="translate-x-20 w-full h-100 flex flex-col items-center pt-5 bg-[url(assets/valeur_line.png)] bg-contain bg-center bg-no-repeat">
+    <section class="w-screen h-auto p-65 fadein-on-scroll max-xl:hidden">
+        <span class="translate-x-20 w-full h-100 flex flex-col items-center pt-5 bg-[url(assets/valeur_line.png)] bg-contain bg-center bg-no-repeat max-xl:hidden">
             <h2 class="text-5xl translate-x-120 -translate-y-25 font-semibold py-5 ">Nos Valeurs</h2>
         </span>
         <div class="flex justify-between gap-[8vw] fadein-on-scroll">
@@ -142,12 +142,51 @@
         </div>
     </section>
 
-    <section class="w-screen h-screen bg-blue-200/50 bg-[url(/assets/icon/contacts_icons.png)] bg-no-repeat bg-center bg-size-[70vh]">
-        <div class="absolute flex w-80 h-100 px-10">
-            <h4 class="text-4xl">Courrier</h4>
+    <section class="w-screen h-screen bg-[url(/assets/icon/contacts_icons.png)] bg-no-repeat bg-center bg-size-[70vh] max-xl:hidden">
+        
+        <div class="w-120 h-120  p-8 flex flex-col items-center gap-5 absolute">
+            <h4 class="text-5xl text-center pb-15">Courrier</h4>
+            <div class="flex items-center gap-5">
+                <img class="w-10 h-auto" src="assets/icon/iconmail.png" alt="mail icon">
+                <p class=" text-xl">stroma.pro@gmail.com</p>
+            </div>
+            <div class="flex items-center gap-5">
+                <img class="w-10 h-auto" src="assets/icon/icon_house.png" alt="house">
+                <p class=" text-xl">123 rue jean macé, <br>saint-dié-des-vosges, 88100</p>
+            </div>
         </div>
+        
+        <div class="w-120 h-120  p-8 flex flex-col items-center gap-5 absolute right-0">
+            <h4 class="text-5xl text-center pb-15">Reseau</h4>
+            <div class="flex items-center gap-5">
+                <img class="w-10 h-auto" src="assets/icon/linkdin_logo.png" alt="mail icon">
+                <p class=" text-xl">@Stroma</p>
+            </div>
+            <div class="flex items-center gap-5">
+                <img class="w-10 h-auto" src="assets/icon/instagram_logo.png" alt="house">
+                <p class=" text-xl">@Stroma</p>
+            </div>
+            <div class="flex items-center gap-5">
+                <img class="w-10 h-auto" src="assets/icon/x_logo.png" alt="house">
+                <p class=" text-xl">@Stroma</p>
+            </div>
+        </div>
+        
+        <div class="w-120 h-120  p-8 flex flex-col items-center gap-5 absolute right-0 translate-y-145 ">
+            <h4 class="text-5xl text-center pb-15">Application</h4>
+            <img class="w-18 h-auto" src="assets/icon/android_logo.png" alt="Android bouton">
+            <img class="w-30 h-auto" src="assets/icon/app_store_logo.png" alt="App-Store bouton">
+        </div>
+
+        <div class="w-120 h-120  p-8 flex flex-col items-center gap-5 absolute translate-y-145">
+            <h4 class="text-5xl text-center pb-15">Téléphone</h4>
+            <div class="flex items-center gap-5">
+                <img class="w-10 h-auto" src="assets/icon/phone_icon.png" alt="phone icon">
+                <p>01 23 45 67 89</p>
+            </div>
+        </div>
+
     </section>
 
-    <script type="module" src="script/script.js"></script>
 </body>
 </html>
