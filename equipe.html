@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notre Equipe</title>
-    
-    
+
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -14,95 +15,162 @@
     <!-- audiowide, poppins, roboto, and outfit summonss -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="font-[outfit] ">
     <!-- TODO le responsive c'est une horeur -->
     <header class="w-screen h-auto bg-[url(assets/line_white.png)] bg-no-repeat bg-bottom bg-contain max-xl:h-[50vh]">
         <span class="absolute top-70 -z-10 bg-gray-400/20 blur-2xl w-screen h-150 overflow-hidden"></span>
 
-        <nav id="navbar" class="w-screen h-30 flex gap-10 justify-center overflow-hidden max-xl:h-auto max-xl:block">
-            <!-- <span class="absolute bg-gray-400/60 w-200 h-200 blur-2xl rotate-45 -z-10 translate-x-150 overflow-clip"></span> -->
+        <nav id="navbar" class="w-full h-30 flex gap-10 justify-around p-4">
 
             <div class="w-130 flex items-center gap-4">
-                <img src="assets/Stroma_Logo_cropped.png" alt="Stroma Logo" class="w-18 h-auto ml-4 max-xl:scale-50">
-                <h3 class="font-[audiowide] text-3xl max-xl:hidden">STROMA</h3>
+                <img src="assets/Stroma_Logo_cropped.png" alt="Stroma Logo" class="w-18 h-auto ml-4">
+                <h3 class="font-[audiowide] text-3xl">STROMA</h3>
             </div>
-            <div class="w-280 flex justify-center items-center gap-14 font-[Roboto] max-xl:hidden">
+
+            <div class="w-300 flex justify-center items-center gap-14 font-[Roboto] text-xl">
                 <!-- TODO Ajouter les liens -->
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Solutions</p></a>
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Fonctionnement</p></a>
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Application</p></a>
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Support</p></a>
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href="">
+                    <p>Solutions</p>
+                </a>
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href="blog.html">
+                    <p>Blog</p>
+                </a>
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href="equipe.html">
+                    <p>Equipe</p>
+                </a>
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href="support.html">
+                    <p>Support</p>
+                </a>
             </div>
-            <div class="w-130 flex justify-center items-center max-xl:hidden">
-                <!-- La ou il y avait le bouton avant -->
+
+            <div class="w-130 flex justify-center items-center">
+                <button
+                    class="bg-[#292929] text-white rounded-4xl p-4 px-8 font-[Roboto] transition-all duration-150  hover:shadow-lg hover:-translate-0.5 hover:bg-white hover:text-black hover:border-2 hover:font-bold">S'inscrire
+                    Maintenant</button>
             </div>
         </nav>
 
         <div class="flex justify-center w-full h-200 max-xl:flex-col max-xl:h-[10vh]">
-            <h1 class="w-[60vw] text-7xl font-[Audiowide] text-center pt-50 max-xl:text-[8vw] max-xl:w-full">Notre Equipe</h1>
-            <img class="w-auto h-auto max-xl:absolute max-xl:opacity-20 max-xl:-z-10 max-xl:scale-50 max-xl:translate-x-[30vw] max-xl:translate-y-30" src="assets/stroma_drawed_illustration.png" alt="">
+            <h1 class="w-[60vw] text-7xl font-[Audiowide] text-center pt-50 max-xl:text-[8vw] max-xl:w-full">Notre
+                Equipe</h1>
+            <img class="w-auto h-auto max-xl:absolute max-xl:opacity-20 max-xl:-z-10 max-xl:scale-50 max-xl:translate-x-[30vw] max-xl:translate-y-30"
+                src="assets/stroma_drawed_illustration.png" alt="">
         </div>
     </header>
-    
+
     <section class="bg-white w-screen h-auto flex flex-col gap-5 justify-center pt-20 ">
 
-        <div class=" w-[90vw] h-auto m-10 mt-3 flex justify-center items-center gap-30 fadein-on-scroll max-xl:flex-col max-xl:gap-8 ">
-            <div class=" flex flex-col p-15 border-4 border-black/1 border-dashed rounded-4xl grid-test transition-all duration-800 hover:border-black/15 hover:shadow-2xl/5 max-xl:w-[50vw] max-xl:border-black/15">
+        <div
+            class=" w-[90vw] h-auto m-10 mt-3 flex justify-center items-center gap-30 fadein-on-scroll max-xl:flex-col max-xl:gap-8 ">
+            <div
+                class=" flex flex-col p-15 border-4 border-black/1 border-dashed rounded-4xl grid-test transition-all duration-800 hover:border-black/15 hover:shadow-2xl/5 max-xl:w-[50vw] max-xl:border-black/15">
                 <div id="top_column" class=" flex flex-row gap-40 w-150 max-xl:w-[40vw] max-lg:gap-20 max-sm:gap-5">
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/1004384013814865990/a254af8b542d3f37e9e37ad646d94793.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">N_alinazari20</p>
+                        <span
+                            class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]">
+                            <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400"
+                                src="https://cdn.discordapp.com/avatars/1004384013814865990/a254af8b542d3f37e9e37ad646d94793.webp?size=160"
+                                alt=""></span>
+                        <p
+                            class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">
+                            N_alinazari20</p>
                     </div>
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="assets/placeholderuser.png" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">Dorian</p>
+                        <span
+                            class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]">
+                            <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400"
+                                src="assets/placeholderuser.png" alt=""></span>
+                        <p
+                            class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">
+                            Dorian</p>
                     </div>
                 </div>
                 <div id="down_column" class=" flex flex-row justify-end gap-40 w-150 max-xl:w-[40vw] ">
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/242043041609809922/0f5a236265f74e2ab45b7e66a4c67212.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">D<span class="text-sm">im</span></p>
+                        <span
+                            class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]">
+                            <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400"
+                                src="https://cdn.discordapp.com/avatars/242043041609809922/0f5a236265f74e2ab45b7e66a4c67212.webp?size=160"
+                                alt=""></span>
+                        <p
+                            class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">
+                            D<span class="text-sm">im</span></p>
                     </div>
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/279714464440516619/810a640a573f2242b0b12972c26ef9e8.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">Niightstone</p>
+                        <span
+                            class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]">
+                            <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400"
+                                src="https://cdn.discordapp.com/avatars/279714464440516619/810a640a573f2242b0b12972c26ef9e8.webp?size=160"
+                                alt=""></span>
+                        <p
+                            class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">
+                            Niightstone</p>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col justify-center gap-5 w-250 p-10 max-xl:-order-1 max-xl:text-center max-xl:w-[90vw]">
+            <div
+                class="flex flex-col justify-center gap-5 w-250 p-10 max-xl:-order-1 max-xl:text-center max-xl:w-[90vw]">
                 <h2 class="text-5xl max-xl:text-[5vw] max-md:text-[8vw]">Equipe Marketing </h2>
-                <p class="text-2xl text-gray-400 max-xl:text-[2vw]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, distinctio aut veritatis repellat nobis nisi ipsa dolores explicabo fuga id deserunt laborum! Consequatur quos quasi dolorem, error necessitatibus autem iure.</p>
+                <p class="text-2xl text-gray-400 max-xl:text-[2vw]">L’équipe marketing de STROMA, composée de quatre esprits créatifs, collabore main dans la main pour donner vie à l’univers du projet. Ensemble, nous mélangeons nos idées, nos styles et nos énergies pour créer une identité forte et inspirante.</p>
             </div>
         </div>
 
-        <div class="w-[90vw] h-auto m-10 mt-3 flex justify-center items-center gap-30 fadein-on-scroll max-xl:flex-col max-xl:gap-8">
-            
+        <div
+            class="w-[90vw] h-auto m-10 mt-3 flex justify-center items-center gap-30 fadein-on-scroll max-xl:flex-col max-xl:gap-8">
+
             <div class="flex flex-col gap-5 w-250 p-10 text-end max-xl:text-center">
                 <h2 class="text-5xl font-[]">Conception du site web </h2>
-                <p class="text-2xl text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, distinctio aut veritatis repellat nobis nisi ipsa dolores explicabo fuga id deserunt laborum! Consequatur quos quasi dolorem, error necessitatibus autem iure.</p>
+                <p class="text-2xl text-gray-400">L’équipe web de STROMA a conçu un site qui reflète pleinement l’essence du projet. Ensemble, nous avons imaginé une expérience fluide et immersive, mêlant design moderne et identité visuelle unique pour plonger chaque visiteur dans l’univers de STROMA.</p>
             </div>
-            <div class=" flex flex-col  p-15 border-4 border-black/1 border-dashed rounded-4xl grid-test transition-all duration-800 hover:border-black/15 hover:shadow-2xl/5 max-xl:w-[50vw] max-xl:border-black/15">
+            <div
+                class=" flex flex-col  p-15 border-4 border-black/1 border-dashed rounded-4xl grid-test transition-all duration-800 hover:border-black/15 hover:shadow-2xl/5 max-xl:w-[50vw] max-xl:border-black/15">
                 <div id="top_column" class=" flex flex-row gap-40 w-150">
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/584096691473350657/8d217fd0e21f7324603be40c43771de0.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">Cheap Griffy</p>
+                        <span
+                            class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]">
+                            <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400"
+                                src="https://cdn.discordapp.com/avatars/584096691473350657/a_5e6241a090fcdb22b4d877a8ce6fe7a0.webp?size=160&animated=true"
+                                alt=""></span>
+                        <p
+                            class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">
+                            Cheap Griffy</p>
                     </div>
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400 object-center" src="https://cdn.discordapp.com/avatars/1168719060914163812/7968133e46eb426f10e69e33099ca8cb.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">Reyremy</p>
+                        <span
+                            class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]">
+                            <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400 object-center"
+                                src="https://cdn.discordapp.com/avatars/1168719060914163812/7968133e46eb426f10e69e33099ca8cb.webp?size=160"
+                                alt=""></span>
+                        <p
+                            class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">
+                            Reyremy</p>
                     </div>
                 </div>
                 <div id="down_column" class=" flex flex-row justify-end gap-40 w-150">
                     <div class="group flex flex-col items-center translate-x-5 ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="https://cdn.discordapp.com/avatars/775107336183480320/dc60fa55ad0814e5c75c45c91c3ef551.webp?size=160" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">🎃𝕿𝖍𝖊_𝕾𝖕𝖆𝖒𝖊𝖗🎃</p>
+                        <span
+                            class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]">
+                            <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400"
+                                src="https://cdn.discordapp.com/avatars/775107336183480320/dc60fa55ad0814e5c75c45c91c3ef551.webp?size=160"
+                                alt=""></span>
+                        <p
+                            class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">
+                            🎃𝕿𝖍𝖊_𝕾𝖕𝖆𝖒𝖊𝖗🎃</p>
                     </div>
                     <div class="group ">
-                        <span class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]"> <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400" src="assets/placeholderuser.png" alt=""></span>        
-                        <p class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">Placeholder</p>
+                        <span
+                            class="w-35 h-35 bg-gray-200 border border-gray-400 shadow-lg rounded-3xl flex items-center justify-center text-center transform -rotate-45 mb-4 overflow-clip group-hover:rounded-[100%] transition-all duration-400 group-hover:scale-110 max-xl:w-[8vw] max-xl:h-[8vw]">
+                            <img class="rotate-45 scale-130 group-hover:scale-100 transition-all duration-400"
+                                src="assets/placeholderuser.png" alt=""></span>
+                        <p
+                            class="text-2xl text-center text-black/0 group-hover:text-black/80 transition-all duration-400 max-xl:text-black/70 max-xl:pt-5 max-xl:text-[1vw]">
+                            Placeholder</p>
                     </div>
                 </div>
             </div>
@@ -110,40 +178,51 @@
     </section>
 
     <section class="w-screen h-auto p-65 fadein-on-scroll max-xl:hidden">
-        <span class="translate-x-20 w-full h-100 flex flex-col items-center pt-5 bg-[url(assets/valeur_line.png)] bg-contain bg-center bg-no-repeat max-xl:hidden">
+        <span
+            class="translate-x-20 w-full h-100 flex flex-col items-center pt-5 bg-[url(assets/valeur_line.png)] bg-contain bg-center bg-no-repeat max-xl:hidden">
             <h2 class="text-5xl translate-x-120 -translate-y-25 font-semibold py-5 ">Nos Valeurs</h2>
         </span>
         <div class="flex justify-between gap-[8vw] fadein-on-scroll">
             <div class="w-100 h-110 flex flex-col items-center gap-8">
                 <img class="w-48 h-auto " src="assets/icon/idea_icon.png" alt="">
                 <p class="text-center text-xl">
-                    Nous plaçons la <span class="font-bold">nature</span> au cœur de notre <span class="font-bold">démarche</span>.
-                    Chaque <span class="font-bold">projet</span> est pensé pour <span class="font-bold">réduire</span> son <span class="font-bold">impact</span> environnemental
-                    et <span class="font-bold">encourager</span> une utilisation <span class="font-bold">responsable</span> des ressources.
+                    Nous plaçons la <span class="font-bold">nature</span> au cœur de notre <span
+                        class="font-bold">démarche</span>.
+                    Chaque <span class="font-bold">projet</span> est pensé pour <span class="font-bold">réduire</span>
+                    son <span class="font-bold">impact</span> environnemental
+                    et <span class="font-bold">encourager</span> une utilisation <span
+                        class="font-bold">responsable</span> des ressources.
                 </p>
             </div>
             <div class="w-100 h-110 flex flex-col items-center gap-8">
                 <img class="w-48 h-auto " src="assets/icon/earth_icon.png" alt="">
                 <p class="text-center text-xl">
-                    Nous croyons en la <span class="font-bold">puissance</span> de la <span class="font-bold">technologie</span> pour transformer
+                    Nous croyons en la <span class="font-bold">puissance</span> de la <span
+                        class="font-bold">technologie</span> pour transformer
                     <span class="font-bold">positivement</span> notre rapport
-                    à l’<span class="font-bold">environnement</span>. Nos <span class="font-bold">solutions</span> connectées allient <span class="font-bold">performance, design</span> et <span class="font-bold">durabilité</span>.
+                    à l’<span class="font-bold">environnement</span>. Nos <span class="font-bold">solutions</span>
+                    connectées allient <span class="font-bold">performance, design</span> et <span
+                        class="font-bold">durabilité</span>.
                 </p>
             </div>
             <div class="w-100 h-110 flex flex-col items-center gap-8">
                 <img class="w-48 h-auto pt-8" src="assets/icon/handshake_icon.png" alt="">
                 <p class="text-center text-xl">
-                    Nous <span class="font-bold">avançons ensemble</span>. L’écoute, le <span class="font-bold">partage</span> d’idées et la
-                    <span class="font-bold">co-création</span> sont essentiels à notre <span class="font-bold">réussite collective</span> et
-                    à la construction d’un <span class="font-bold">avenir</span> plus <span class="font-bold">vert</span>.
+                    Nous <span class="font-bold">avançons ensemble</span>. L’écoute, le <span
+                        class="font-bold">partage</span> d’idées et la
+                    <span class="font-bold">co-création</span> sont essentiels à notre <span class="font-bold">réussite
+                        collective</span> et
+                    à la construction d’un <span class="font-bold">avenir</span> plus <span
+                        class="font-bold">vert</span>.
                 </p>
             </div>
 
         </div>
     </section>
 
-    <section class="w-screen h-screen bg-[url(/assets/icon/contacts_icons.png)] bg-no-repeat bg-center bg-size-[70vh] max-xl:hidden">
-        
+    <section
+        class="w-screen h-screen bg-[url(/assets/icon/contacts_icons.png)] bg-no-repeat bg-center bg-size-[70vh] max-xl:hidden">
+
         <div class="w-120 h-120  p-8 flex flex-col items-center gap-5 absolute">
             <h4 class="text-5xl text-center pb-15">Courrier</h4>
             <div class="flex items-center gap-5">
@@ -155,7 +234,7 @@
                 <p class=" text-xl">123 rue jean macé, <br>saint-dié-des-vosges, 88100</p>
             </div>
         </div>
-        
+
         <div class="w-120 h-120  p-8 flex flex-col items-center gap-5 absolute right-0">
             <h4 class="text-5xl text-center pb-15">Reseau</h4>
             <div class="flex items-center gap-5">
@@ -171,7 +250,7 @@
                 <p class=" text-xl">@Stroma</p>
             </div>
         </div>
-        
+
         <div class="w-120 h-120  p-8 flex flex-col items-center gap-5 absolute right-0 translate-y-145 ">
             <h4 class="text-5xl text-center pb-15">Application</h4>
             <img class="w-18 h-auto" src="assets/icon/android_logo.png" alt="Android bouton">
@@ -188,5 +267,114 @@
 
     </section>
 
+    <footer class="h-full text-gray-700 pt-60 pb-5">
+    <img class="relative translate-y-10 bottom-10 min-w-screen" src="assets/line.png" alt="">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 items-center">
+            <div class="flex flex-col items-start space-y-4 md:col-span-1">
+                <div class="text-2xl font-extrabold text-gray-800 -translate-y-25">
+                    <img class="mr-5 w-20" src="assets/logo.png" alt="Logo STROMA">
+                </div>
+                <div class="flex space-x-4 text-xl -translate-y-25 ">
+                    <a href="https://x.com/" target="_blank" class="transition-all hover:scale-110">
+                        <img class="w-10 h-10 -translate-y-1.5"
+                            src="assets/vecteezy_new-twitter-x-logo-twitter-icon-x-social-media-icon_42148611.png"
+                            alt="Icône Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="transition-all hover:scale-110">
+                        <img class="w-7 h-7" src="assets/instagram.png" alt="Icône Instagram">
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-1 text-sm text-center md:text-left">
+                <p class="max-w-xs mx-auto md:mx-0 leading-snug">
+                    Téléchargez notre application et gardez le contrôle, où que vous soyez. Profitez de toutes les
+                    fonctionnalités directement depuis votre smartphone. Disponible dès maintenant sur App Store et
+                    Google Play – simple, rapide et pratique, tout ce dont vous avez besoin.
+                </p>
+            </div>
+            <div
+                class="flex flex-row md:flex-col space-y-4 md:space-y-4 space-x-4 md:space-x-0 justify-center md:items-end md:col-span-1">
+                <a href="https://www.apple.com/fr/app-store/" target="_blank"
+                    class="inline-flex items-center flex-row-reverse justify-center bg-gray-400 hover:bg-gray-500 text-white font-bold py-4 px-9 rounded-full shadow-md text-xs transition duration-300 min-w-[150px]">
+                    APP STORE
+                    <img class="w-8 h-8 mr-6" src="assets/app_store.png" alt="App Store badge">
+                </a>
+                <a href="https://play.google.com/store/apps?hl=fr" target="_blank"
+                    class="inline-flex items-center flex-row-reverse justify-center bg-gray-400 hover:bg-gray-500 text-white font-bold py-4 px-9 rounded-full shadow-md text-xs transition duration-300 min-w-[150px]">
+                    GOOGLE PLAY
+                    <img class="w-8 h-8 mr-2" src="assets/google_play.png" alt="Google Play badge">
+                </a>
+            </div>
+        </div>
+        <hr class="border-t border-gray-400 w-full mb-12">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+            <div class="space-y-4">
+                <h3 class="font-bold text-sm uppercase mb-4 text-gray-800">Entreprise</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="equipe.html" class="hover:underline">À propos de nous</a></li>
+                    <li><a href="#" class="hover:underline">Notre mission</a></li>
+                    <li><a href="equipe.html" class="hover:underline">L'équipe STROMA</a></li>
+                    <li><a href="#partenaires" class="hover:underline">Partenaires / Investisseurs</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="font-bold text-sm uppercase mb-4 text-gray-800">Blog</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="blog.html" class="hover:underline">Conseils pour entretenir vos plantes</a></li>
+                    <li><a href="blog.html" class="hover:underline">L'importance de l'humidité du sol</a></li>
+                    <li><a href="blog.html" class="hover:underline">Innovations dans le jardin connecté</a></li>
+                    <li><a href="blog.html" class="hover:underline">Les erreurs courantes d'arrosage</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="font-bold text-sm uppercase mb-4 text-gray-800">Fonctionnalités</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#mesure" class="hover:underline">Mesure précise de l'humidité</a></li>
+                    <li><a href="#fonctionnement" class="hover:underline">Alerte en temps réel</a></li>
+                    <li><a href="#fonctionnement" class="hover:underline">Connexion Bluetooth / Wi-Fi</a></li>
+                    <li><a href="#fonctionnement" class="hover:underline">Historique d'arrosage</a></li>
+                    <li><a href="#humidité" class="hover:underline">Économie d'eau intelligente</a></li>
+                </ul>
+            </div>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-bold text-sm uppercase mb-4 text-gray-800">Contact</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="equipe.html" class="hover:underline">Nous contacter</a></li>
+                        <li><a href="#" class="hover:underline">Support technique</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-sm uppercase mb-4 text-gray-800">Mentions légales</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://www.francenum.gouv.fr/guides-et-conseils/developpement-commercial/site-web/rediger-des-conditions-generales-dutilisation"
+                                target="_blank" class="hover:underline">Conditions d'utilisation</a></li>
+                        <li><a href="https://www.economie.gouv.fr/politique-confidentialite" target="_blank"
+                                class="hover:underline">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row justify-between items-start md:items-end pt-5 border-t border-gray-300">
+            <p class="text-sm max-w-md mb-6 md:mb-0">
+                <strong class="font-bold">STROMA</strong> est un capteur intelligent d'humidité du sol conçu pour
+                aider les amoureux des plantes à mieux comprendre les besoins de leurs végétaux. Grâce à la
+                technologie et à la nature réunies, <strong class="font-bold">STROMA</strong> simplifie l'arrosage
+                et favorise une croissance durable.
+            </p>
+            <div
+                class="bg-radial from-white to-gray-400/40 text-gray-800 text-xs p-3 rounded-4xl shadow-inner items-center flex flex-col ">
+                <span>© 2025 STROMA.</span>
+                <span>Propulsé par la nature.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
+
 </html>
+
+<!-- UGV0aXQgbWVzc2FnZSB2aXRlIGZhaXQuLi4gMDQvMTEvMjAyNSBMZSBkZXJuaWVyIGpvdXJzIGF2YW50IGwnZXhhbWluIGZpbmFsLgpBcHJlcyBhdm9pciBtZXJnZSBsZXMgYnJhbmNoIGRlIHRvdXRlIGxlIG1vbmRlIHBvdXIgdW5lIGdlbnJlIGRlIHByw6kgcHJlc2VudGF0aW9uIGonYWkgZHUgcGFyY291cmlyIGxlIHRvdXQgcG91ciBmb3VpbGxlciBldCByZXNvdWRyZSBwbGVpbnMgZGUgcGV0aXQgcHJvYmxlbWUuCkp1c3RlIGF2YW50IGonZXR0YWl0IGNoZXogQWxpIHBvdXIgdGVudGVyIGRlIGZhaXJlIG1hcmNoZXIgbGUgY2FwdGV1ciBldGMuLi4gYnJlZiBqJ21lIHN1aXMgcGFzIHJlcG9zZXIgZGUgbGEgam91cm7DqWUuCkplIHZlbnQgdW4gcGV1dCBpY2kuLi4gQydlc3QgZWRneSBkJ2VuY29kZXIgZW4gYmFzZTY0IG1haXMgYm9uLi4uCgpDJ2VzdCBlZ29jZW50cmlxdWUgY2UgcXVlIGplIHZhaXMgZGlyZSwgY2Egc2UgdHJvdXZlIGMnZXN0IGp1c3RlIHVuIHNraWxsIGlzc3VlIGRlIG1vaSBxdWkgc2FpdCBwYXMgdGFmZmVyIGVuIGdyb3VwZS4KbWFpcyBqJ2FpIHZyYWltZW50IHBhcyBlbnZpZSBkZSB2b2lyIGRlcyAiUnlhbiIgZW4gZW50cmVwcmlzZS4KbGUgdm9pciBoMjQgc3VyIGJyYXdsIHN0YXIgb3Ugcm9ibG94IGMnZXN0IGNoYXVkLi4uCgpKJ2FpIHBhcyBlbnZpZSBkZSBsZSBjb25mcm9udGVyIG1haXMgc2FoIGNhIGNyYWludCBkZSBmb3UKTWFpcyBjJ2VzdCBjYXNzZSBjb3VpbGxlLCBqJ21lIHNlbnMgdWx0cmEgc2V1bCBxdWFuZCBqZSBjb2RlLiBqJ3ZldXQgZGlyZSwgUmVteSBmYWl0IGxlIHRhZiwgaWwgZXN0IGN1cmlldXgsIGMnZXN0IGNlIHF1J29uIGRlbWFuZGUuCm1haXMgYXp5IHBvdXJxdW9pIGMnZXN0IG1vaSBxdWkgZG9pdCBleHBsaXF1ZXIgdG91dCBhIFRyYW1hZG9sZSwgZXQgcHV0YWluIFJ5YW4gdHUgZmVzYWl0IHF1b2kgYXUgbHljw6llIHBvdXIgw6l0cmUgYXVzc2kgZGljaXDDqS4KCkonc3VpcyB1bHRyYSB0aW1pZGUgZGUgYmFzZSwgY29tbWUgY2UgcXVlIEJyeWFuIGRpc2FpdCBhdSB0b3V0IGRlYnV0IGRlIGxhIGZvcm1hdGlvbiAiamUgZ2FsZXJhaXQgYSBkaXJlIGJvbmpvdXJzIGF1IGNhaXNzaWVyZSBjYXJlbWVudCIKRXQgaidtZSBmb3JjZSBkZSB6aW56aW4ganVzdGUgcG91ciDDqXRyZSBwb3RhYmxlIHBvdXIgdG91dCBsZSBtb25kZSAoaidzdWlzIHBsdXRvdCBmaWVyIGRlIGNvbW1lbnQgamUgbSdlbiBzb3J0KQpNYWlzIHF1YW5kIGplIHRhZiBhdmVjIGV1eCwgaidhaSBsJ2ltcHJlc3Npb24gcXVlIG1lcyBlZmZvcnQgYXVyYWl0IHB1cyDDqXRyZSBtaXMgYWlsbGV1ci4KCkEgdG9pIHF1aSBsaXQgw6dhLiBkZWphIGRlc28gZGVzIGZhdXRlcyBkJ29ydGhvIG1haXMgYm9uIHR1IG1lIGNvbm5haXQgYWhhaC4KbWUgbGUgZGl0IHBhcyBzdGV1cGxhaXMsIGonYWkgcGFzIGVudmllIGRlIG1lIGp1c3RpZmllciBzdXIgY2UgcXVlIGonYWkgZWNyaXMuCgpQZXV0IMOpdHJlIHF1ZSBqZSBzdWlzIHRyb3AgZmF0aWd1w6kgcG91ciByZWZsZWNoaXIgY29ycmVjdGVtZW50IHF1aSBzYWl0Li4uCgpNZSBmb3JjZXIgYSDDqXRyZSBzb2NpYWJsZSBjJ2VzdCBwYXMgcXVlIHBvdXIgbW9pLCBjJ2VzdCBzdXJ0b3V0IHBhciBlbXBhdGhpZSBldCBwYXIgcGV1ciBkZSB2b3VzIGRlcmFuZ2VyIF5eCgotIEdyaWZmeSwgbGUgcCd0aXQgY2hpZW4gdmVydCBsYQ== -->

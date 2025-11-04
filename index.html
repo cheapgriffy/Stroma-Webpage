@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!-- audiowide, poppins, roboto, and outfit summonss -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="font-[Roboto]">
 
     <!-- Static planet background, normally in header bg -->
     <!-- bg-[url(/assets/World.png)] -->
 
     <header class="bg-no-repeat bg-center bg-contain flex flex-col w-full h-screen max-[1540px]:h-[110vh]">
-
-
+        <span class="absolute top-70 -z-10 bg-gray-400/20 blur-2xl w-full h-150"></span>
         <nav id="navbar" class="w-full h-30 flex gap-10 justify-around p-4">
 
             <div class="w-130 flex items-center gap-4">
@@ -32,51 +35,66 @@
 
             <div class="w-300 flex justify-center items-center gap-14 font-[Roboto] text-xl">
                 <!-- TODO Ajouter les liens -->
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Solutions</p></a>
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Fonctionnement</p></a>
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Application</p></a>
-                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Support</p></a>
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href="">
+                    <p>Solutions</p>
+                </a>
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href="blog.html">
+                    <p>Blog</p>
+                </a>
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href="equipe.html">
+                    <p>Equipe</p>
+                </a>
+                <a class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href="support.html">
+                    <p>Support</p>
+                </a>
             </div>
 
             <div class="w-130 flex justify-center items-center">
-                <button class="bg-[#292929] text-white rounded-4xl p-4 px-8 font-[Roboto] transition-all duration-150  hover:shadow-lg hover:-translate-0.5 hover:bg-white hover:text-black hover:border-2 hover:font-bold">S'inscrire Maintenant</button>
+                <button
+                    class="bg-[#292929] text-white rounded-4xl p-4 px-8 font-[Roboto] transition-all duration-150  hover:shadow-lg hover:-translate-0.5 hover:bg-white hover:text-black hover:border-2 hover:font-bold">S'inscrire
+                    Maintenant</button>
             </div>
-
         </nav>
 
         <!-- color of text = bg-gradient, is clipped || cant do gradient on base text color -->
         <!-- par contre la vie de oim je pisse sur ceux qui on decider que webkit devait étre different. j'vous lache le meilleur coulis de redbull sponso par ma vessie en sah -->
         <div class="h-90 flex justify-center items-end                                        
-        text-[300px] max-[1540px]:text-[200px] transition-all font-bold font-[Roboto] tracking-[40px] text-black/80
-        bg-linear-to-b from-[#111112] via-[#111112]/80 to-transparent
-        bg-clip-text mix-blend-screen select-none">
+            text-[300px] max-[1750px]:text-[250px] transition-all font-bold font-[Roboto] tracking-[40px] text-black/80
+            bg-linear-to-b from-[#111112] via-[#111112]/80 to-transparent
+            bg-clip-text mix-blend-screen select-none">
             <h1 id="stroma_title" class="relative top-20">STROMA</h1>
         </div>
 
-        <div id="hero_down_div" class=" flex h-full font-[Roboto] bg-[url(/assets/line_white.png)] bg-position-[center_bottom] bg-no-repeat bg-contain ">
+        <div id="hero_down_div"
+            class=" flex h-full font-[Roboto] bg-[url(/assets/line_white.png)] bg-position-[center_bottom] bg-no-repeat bg-contain ">
 
             <div class=" w-full flex flex-col justify-between font-bold text-3xl max-[1540px]:text-xl">
                 <div class=" p-4 px-24 h-auto ">
                     <h4 class="pl-1">Données Des Plantes <br> En Temps Réel.</h4>
                     <h4 class="text-gray-500 pl-1">Programmation <br> Automatique, <br> Alerte Fuite & Sécheresse.</h4>
                     <h4 class="pl-1">Arrosage Rapide.</h4>
-                    <button class="border-gray-600 border bg-white/90 backdrop-blur-2xl text-gray-600 rounded-4xl mt-5 p-2 px-5 font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5"> Voir Plus De Détails</button>
+                    <button
+                        class="border-gray-600 border bg-white/90 backdrop-blur-2xl text-gray-600 rounded-4xl mt-5 p-2 px-5 font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5">
+                        Voir Plus De Détails</button>
                 </div>
-                <div class=" flex justify-center max-[1540px]:scale-70 items-center h-auto flex-nowrap">
-                    <p class="font-normal text-[100px] pr-8 text-nowrap">40% +</p> 
+                <div class=" flex justify-center max-[1750px]:scale-70 items-center h-auto flex-nowrap">
+                    <p class="font-normal text-[100px] pr-8 text-nowrap">40% +</p>
                     <h4>Eau Économisée <br> En Moyenne <br> Avec STROMA </h4>
                 </div>
             </div>
 
             <div class="w-full h-110 flex flex-col justify-center items-center">
-                <button class="relative top-95 z-1 bg-[#2b2b2b]/70 backdrop-blur-2xl rounded-4xl mt-5 p-2 px-5 text-white font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5">Commencer Gratuitement</button>
-                <img id="plants" class="w-[85%] relative bottom-15" src="assets/plants.png" alt="Multiple plants with white stylised pots">
+                <button
+                    class="relative top-95 z-1 bg-[#2b2b2b]/70 backdrop-blur-2xl rounded-4xl mt-5 p-2 px-5 text-white font-[Roboto] font-normal text-xl transition-all duration-150 ease-in-out hover:shadow-lg hover:-translate-0.5">Commencer
+                    Gratuitement</button>
+                <img id="plants" class="w-[85%] relative bottom-15" src="assets/plants.png"
+                    alt="Multiple plants with white stylised pots">
             </div>
 
-            <div class=" w-full font-bold flex flex-col items-center">
+            <div class=" w-full font-bold flex flex-col items-center max-[1750px]:scale-80">
                 <div>
                     <h4 class="w-50 text-3xl">La Nature, Protégée Par Nos Codes</h4>
-                    <h5 class="text-gray-500 text-2xl" >Avenir, Nature, Technologie</h5>
+                    <h5 class="text-gray-500 text-2xl">Avenir, Nature, Technologie</h5>
                 </div>
             </div>
 
@@ -85,87 +103,80 @@
         <!-- Overlay div, containing masked plane on the planet (can be move from js by editing mask-position) -->
         <div id="planet_div" class="-z-10 absolute h-screen w-full flex justify-center
         bg-[url(/assets/planet/Globe_Component.png)] bg-contain bg-center bg-no-repeat">
-            <img id="planet_image" class="mask-[url(/assets/planet/Map_Plane.png)] [mask-size:300%] [mask-position:0px]" src="assets/planet/Globe Component_mask.png" alt="">
-            <span id="night_darken" class="absolute w-full h-full -z-20"></span>
+            <img id="planet_image" class="mask-[url(/assets/planet/Map_Plane.png)] [mask-size:300%] [mask-position:0px]"
+                src="assets/planet/Globe Component_mask.png" alt="">
         </div>
     </header>
 
-    <span class="text-7xl bg-clip-text bg-linear-to-t from-[#5a5a5a] to-white text-transparent hover:cursor-pointer">+</span>
-    
     <section class="py-15 h-screen flex gap-5 justify-center bg-white ">
         <div class="w-[31%] flex flex-col justify-around">
 
-            <div class="flex flex-col justify-center items-center text-justify h-[32%] rounded-tl-2xl rounded-bl-2xl text-xl max-[1540px]:text-base">
+            <div
+                class="flex flex-col justify-center items-center text-justify h-[32%] rounded-tl-2xl rounded-bl-2xl text-xl max-[1750px]:scale-80">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
                     <span class="w-[45%] h-full rounded-2xl bg-[#5f5f5f]"></span>
                 </div>
                 <div class="flex">
-                    <a href="https://fr.wikipedia.org/wiki/Azote" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
+                    <a href="https://fr.wikipedia.org/wiki/Azote" target="_blank"
+                        class="w-20 h-20 transition-all hover:scale-105 pt-2">
                         <img class="scale-100" src="assets/periodic_table/nitrogen.png" alt="">
                     </a>
-                    <button class="border-2 border-gray-500 h-19 w-19 flex justify-center items-center rounded-br-4xl max-[1750px]:flex min-[1750px]:hidden bg-[#EFEFEF] translate-2 hover:cursor-pointer transition-all hover:scale-105">
-                        <p class="text-8xl bg-clip-text bg-linear-to-t from-[#1a1a1a] to-white text-transparent">+</p>
-                    </button>
-                    <p class="p-5 w-[90%] border-[#5f5f5f] max-[1750px]:hidden min-[1750px]:block"><strong>L’azote</strong> <br> est 
-                    l’un des éléments les plus importants 
-                    pour la croissance des plantes, 
-                    car il participe à la formation de 
-                    la chlorophylle et des protéines. 
-                    Il favorise une croissance rapide 
-                    et vigoureuse des feuilles et 
-                    des tiges. 
-                    Lorsque le sol manque d’azote, 
-                    la plante perd sa couleur verte 
-                    et sa croissance ralentit.
+                    <p class="p-5 w-[90%] border-[#5f5f5f]"><strong>L’azote</strong> <br> est
+                        l’un des éléments les plus importants
+                        pour la croissance des plantes,
+                        car il participe à la formation de
+                        la chlorophylle et des protéines.
+                        Il favorise une croissance rapide
+                        et vigoureuse des feuilles et
+                        des tiges.
+                        Lorsque le sol manque d’azote,
+                        la plante perd sa couleur verte
+                        et sa croissance ralentit.
                     </p>
                 </div>
             </div>
 
-            <div class=" flex flex-col items-center text-justify h-[33%] text-xl max-[1540px]:text-base">
+            <div class="flex flex-col items-center text-justify h-[33%] text-xl max-[1750px]:scale-80">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
                     <span class="w-[45%] min-h-1 h-full rounded-2xl bg-[#5f5f5f]"></span>
                 </div>
                 <div class="flex">
-                    <a href="https://fr.wikipedia.org/wiki/Phosphore" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
+                    <a href="https://fr.wikipedia.org/wiki/Phosphore" target="_blank"
+                        class="w-20 h-20 transition-all hover:scale-105 pt-2">
                         <img class="scale-100" src="assets/periodic_table/phosphore.png" alt="">
                     </a>
-                    <button class="border-2 border-gray-500 h-19 w-19 flex justify-center items-center rounded-br-4xl max-[1750px]:flex min-[1750px]:hidden bg-[#EFEFEF] translate-2 hover:cursor-pointer transition-all hover:scale-105">
-                        <p class="text-8xl bg-clip-text bg-linear-to-t from-[#1a1a1a] to-white text-transparent">+</p>
-                    </button>
-                    <p class="p-5 w-[90%] border-[#5f5f5f] max-[1750px]:hidden min-[1750px]:block"><strong>Le phosphore</strong> <br>
-                    est essentiel au développement des racines, 
-                    à la floraison et à la formation des fruits. 
-                    Il joue un rôle clé dans 
-                    le transfert d’énergie à l’intérieur 
-                    des cellules végétales et aide la plante 
-                    à développer un système racinaire 
-                    fort au début de sa croissance, 
-                    ainsi qu’à disposer de l’énergie nécessaire 
-                    lors de la floraison.
+                    <p class="p-5 w-[90%] border-[#5f5f5f]"><strong>Le phosphore</strong> <br>
+                        est essentiel au développement des racines,
+                        à la floraison et à la formation des fruits.
+                        Il joue un rôle clé dans
+                        le transfert d’énergie à l’intérieur
+                        des cellules végétales et aide la plante
+                        à développer un système racinaire
+                        fort au début de sa croissance,
+                        ainsi qu’à disposer de l’énergie nécessaire
+                        lors de la floraison.
                     </p>
                 </div>
             </div>
-            
-            <div class="flex flex-col items-center text-justify h-[32%] text-xl max-[1540px]:text-base">
+
+            <div class="flex flex-col items-center text-justify h-[32%] text-xl max-[1750px]:scale-80">
                 <!-- Silly top line thingy, -->
                 <div class="flex h-1 w-full bg-[#c4c4c4]">
                     <span class="w-[45%] min-h-1 h-full rounded-2xl bg-[#5f5f5f]"></span>
                 </div>
                 <div class="flex">
-                    <a href="https://fr.wikipedia.org/wiki/Potassium" target="_blank" class="w-20 h-20 transition-all hover:scale-105 pt-2">
+                    <a href="https://fr.wikipedia.org/wiki/Potassium" target="_blank"
+                        class="w-20 h-20 transition-all hover:scale-105 pt-2">
                         <img class="scale-100" src="assets/periodic_table/pottasium.png" alt="">
                     </a>
-                    <button class="border-2 border-gray-500 h-19 w-19 flex justify-center items-center rounded-br-4xl max-[1750px]:flex min-[1750px]:hidden bg-[#EFEFEF] translate-2 hover:cursor-pointer transition-all hover:scale-105">
-                        <p class="text-8xl bg-clip-text bg-linear-to-t from-[#1a1a1a] to-white text-transparent">+</p>
-                    </button>
-                    <p class="p-5 w-[90%] border-[#5f5f5f] max-[1750px]:hidden min-[1750px]:block"><strong>Le potassium</strong> <br>
-                    régule l’équilibre hydrique dans les cellules 
-                    de la plante et la rend plus résistante 
-                    à la sécheresse, au froid et aux maladies. 
-                    Il améliore également la qualité des fleurs 
-                    et des fruits, tout en renforçant les tiges.
+                    <p class="p-5 w-[90%] border-[#5f5f5f]"><strong>Le potassium</strong> <br>
+                        régule l’équilibre hydrique dans les cellules
+                        de la plante et la rend plus résistante
+                        à la sécheresse, au froid et aux maladies.
+                        Il améliore également la qualité des fleurs
+                        et des fruits, tout en renforçant les tiges.
                     </p>
                 </div>
             </div>
@@ -178,7 +189,7 @@
 
         <div class="w-[31%] flex flex-col justify-center gap-8">
 
-            <div class="h-[35%] flex flex-col gap-3 items-center">
+            <div class="h-[35%] flex flex-col gap-3 items-center max-[1750px]:scale-80">
                 <h3 class="font-bold text-3xl w-80">Que savons-nous des besoins des plantes ?</h3>
                 <!-- Silly top line thingy, -->
                 <div class="flex min-h-1 justify-end h-1 w-full bg-[#c4c4c4]">
@@ -186,14 +197,16 @@
                 </div>
                 <div class="bg-[#D9D9D9] p-5 rounded-3xl w-90">
                     <p class="text-[#6B6B6B] font-bold text-xl">
-                        Elles Ont Besoin De Certaines Matiéres Minérales Spécifiques Pour Leur Croissance, Que Notre Systeme <span class="text-black">STROMA</span> Est Capable De Détecter Et De Mesurer.
+                        Elles Ont Besoin De Certaines Matiéres Minérales Spécifiques Pour Leur Croissance, Que Notre
+                        Systeme <span class="text-black">STROMA</span> Est Capable De Détecter Et De Mesurer.
                     </p>
                 </div>
             </div>
 
-            <div class="h-[60%] flex min-h-1 flex-col gap-4 items-center">
+            <div class="h-[60%] flex min-h-1 flex-col gap-7 items-center max-[1750px]:scale-80">
                 <div class="flex gap-7 items-end">
-                    <a href="https://fr.wikipedia.org/wiki/Eau" target="_blank" class="w-20 h-25  transition-all hover:scale-105 pt-5">
+                    <a href="https://fr.wikipedia.org/wiki/Eau" target="_blank"
+                        class="w-20 h-25  transition-all hover:scale-105 pt-5">
                         <img class="m-5 " src="assets/periodic_table/h2o.png" alt="">
                     </a>
                     <h3 class="text-3xl font-bold">L'eau</h3>
@@ -202,13 +215,14 @@
                 <div class="flex justify-end h-1 w-full bg-[#c4c4c4]">
                     <span class="w-[50%] h-full rounded-2xl bg-[#5f5f5f]"></span>
                 </div>
-                <div class="bg-[#D9D9D9] p-5 rounded-3xl w-90">
+                <div class="bg-[#D9D9D9] p-5 rounded-3xl w-90 flex bg-debug">
                     <p class="text-[#6B6B6B] font-bold text-xl">
-                        Chaque plante a besoin d’une quantité d’eau précise pour 
-                        croître sainement. 
-                        L’eau joue un rôle essentiel 
-                        dans le transport des nutriments, la photosynthèse et la régulation thermique. 
-                        Le système <span class="text-black " >STROMA</span> peut mesurer l’humidité du sol et partager avec vous les besoins hydriques exacts de la plante.
+                        Chaque plante a besoin d’une quantité d’eau précise pour
+                        croître sainement.
+                        L’eau joue un rôle essentiel
+                        dans le transport des nutriments, la photosynthèse et la régulation thermique.
+                        Le système <span class="text-black ">STROMA</span> peut mesurer l’humidité du sol et partager
+                        avec vous les besoins hydriques exacts de la plante.
                     </p>
                 </div>
             </div>
@@ -219,64 +233,75 @@
 
     <section class="pt-16 md:pt-23">
 
-        <section id="mesure" class="h-[150vh] pt-10 ">
+        <div id="mesure" class="h-[150vh] pt-10 ">
             <h4 class="font-[Outfit] text-xl text-center">Les composants constitutifs</h4>
             <img class="relative bottom-5" src="assets/line.png" alt="">
-            
+
             <div id="stroma2.0_poppup" class="bg-[#D9D9D9] w-70 h-100 rounded-2xl border-2 border-[#888888]
                 flex flex-col gap-2 p-5 font-[poppins]
                 translate-x-[80vw] -translate-y-20 shadow-2xl">
-        
+
                 <img class="rotate-25 scale-80 -translate-y-50" src="assets/capteur.png" alt="">
                 <p class="text-gray-500 -translate-y-55">Capteur inteligents</p>
                 <div class="-translate-y-55 flex gap-10 text-2xl">
                     <h5>Stroma 0.2</h5>
                     <p>></p>
                 </div>
-                <button id="goober" class="text-center w-30 py-1 border-2 rounded-lg font-semibold -translate-y-50 animation-all duration-200 hover:scale-105 hover:bg-black/50 hover:text-white ">Acheter</button>
+                <button id="goober"
+                    class="text-center w-30 py-1 border-2 rounded-lg font-semibold -translate-y-50 animation-all duration-200 hover:scale-105 hover:bg-black/50 hover:text-white ">Acheter</button>
             </div>
-        
+
             <div class="bg-[#D9D9D9] w-100 p-5 rounded-2xl -translate-y-120 translate-x-10">
                 <h4 class="font-bold text-center text-2xl">Quels sont les composants <br> internes du STROMA 0.2?</h4>
             </div>
-        
-        
+
+
             <div class="absolute flex justify-center w-full h-[150vh] -z-10 -translate-y-80">
-                
-                <span class="absolute left-0  bg-gray-400/20  blur-2xl w-[25vw] h-300"></span>
-                <span class="absolute right-0  bg-gray-400/20  blur-2xl w-[25vw] h-300"></span>
-                
-                <div class="absolute w-120 h-25 bg-[url(/assets/line_half.png)] bg-no-repeat bg-contain flex -translate-x-80 translate-y-35">
+
+                <span class="absolute left-0  bg-gray-400/20  blur-2xl w-[25vw] h-400"></span>
+                <span class="absolute right-0  bg-gray-400/20  blur-2xl w-[25vw] h-400"></span>
+
+                <div
+                    class="absolute w-120 h-25 bg-[url(/assets/line_half.png)] bg-no-repeat bg-contain flex -translate-x-80 translate-y-35">
                     <h5 class="text-2xl text-center font-semibold p-10 pt-5">Revétement <br> Pricipal Du Capteur</h5>
                 </div>
-                <div class="absolute w-120 h-25 bg-[url(/assets/line_half.png)] bg-no-repeat bg-contain flex -translate-x-100 translate-y-150">
+                <div
+                    class="absolute w-120 h-25 bg-[url(/assets/line_half.png)] bg-no-repeat bg-contain flex -translate-x-100 translate-y-150">
                     <h5 class="text-2xl text-center font-semibold p-15 pt-5">Cartes <br> Électroniques</h5>
                 </div>
-                <div class="absolute w-120 h-25 bg-[url(/assets/line_half_reversed.png)] bg-no-repeat bg-contain flex justify-end translate-x-60 translate-y-50">
-                    <h5 class="text-2xl text-center font-semibold p-30 pt-5">Protection <br> Contre <br> L'infiltration <br> D'eau</h5>
+                <div
+                    class="absolute w-120 h-25 bg-[url(/assets/line_half_reversed.png)] bg-no-repeat bg-contain flex justify-end translate-x-60 translate-y-50">
+                    <h5 class="text-2xl text-center font-semibold p-30 pt-5">Protection <br> Contre <br> L'infiltration
+                        <br> D'eau</h5>
                 </div>
-                <div class="absolute w-120 h-25 bg-[url(/assets/line_half_reversed.png)] bg-no-repeat bg-contain flex justify-end translate-x-100 translate-y-115">
+                <div
+                    class="absolute w-120 h-25 bg-[url(/assets/line_half_reversed.png)] bg-no-repeat bg-contain flex justify-end translate-x-100 translate-y-115">
                     <h5 class="text-2xl text-center font-semibold p-30 pt-5">Batteries</h5>
                 </div>
-                <div class="absolute w-120 h-25 bg-[url(/assets/line_half_reversed.png)] bg-no-repeat bg-contain flex justify-end translate-x-100 translate-y-180">
+                <div
+                    class="absolute w-120 h-25 bg-[url(/assets/line_half_reversed.png)] bg-no-repeat bg-contain flex justify-end translate-x-100 translate-y-180">
                     <h5 class="text-2xl text-center font-semibold p-30 pt-5">Capteurs</h5>
                 </div>
-                <img class="absolute h-230 w-auto" src="assets/capteur_breakdown.png" alt="Capteur d'humidité, vue cassé de l'appareillage">
+                <img class="absolute h-230 w-auto" src="assets/capteur_breakdown.png"
+                    alt="Capteur d'humidité, vue cassé de l'appareillage">
             </div>
-        
+        </div>
+
     </section>
 
-
-
-    <section id="fonctionnement" class="bg-gradient-to-b from-white to-gray-300 py-16 md:py-24">
-        <img class="relative translate-y-25 bottom-5 min-w-screen" src="assets/line2.png" alt="">
+    <!-- La div la elle sert a blend les deux section de facon plus naturel avec la DA -->
+    <div class="flex flex-col items-center gap-5 mt-15">
+        <span
+            class="w-80 inline-block px-4 py-1 mb-1 text-xs font-bold uppercase tracking-widest text-black bg-gray-300 rounded-full text-center">
+            Fonctionnement du système STROMA
+        </span>
+        <img class=" w-screen" src="assets/line2.png" alt="">
+    </div>
+    <section id="fonctionnement" class="bg-linear-to-b from-white to-gray-300 h-280">
         <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
             <div class="text-center mb-20">
-                <div class=" inline-block px-4 py-1 mb-1 -translate-y-20 text-xs font-bold uppercase tracking-widest text-black bg-gray-300 rounded-full">
-                    Fonctionnement du système STROMA
-                </div>
-                
-                <h1 class="text-3xl md:text-3xl font-extrabold text-gray-900 mb-4 font-[audiowide] ">
+
+                <h1 class="text-3xl text-center pt-10 md:text-3xl font-extrabold text-gray-900 mb-4 font-[audiowide] ">
                     Comment fonctionne le capteur STROMA ?
                 </h1>
                 <div class="inline-block bg-gray-100 px-6 py-3 rounded-xl shadow-inner mb-8">
@@ -285,161 +310,183 @@
                     </h2>
                 </div>
                 <p class="text-gray-800 max-w-3xl mx-auto">
-                    Le capteur STROMA fonctionne grâce à une combinaison de capteurs d'humidité, d'un microcontrôleur et d'un système de communication intelligent. Il mesure en temps réel le niveau d'eau présent dans le sol, analyse les données et envoie une notification à l'utilisateur lorsqu'un manque d'eau est détecté. En résumé, il observe, analyse et alerte.
+                    Le capteur STROMA fonctionne grâce à une combinaison de capteurs d'humidité, d'un microcontrôleur et
+                    d'un système de communication intelligent. Il mesure en temps réel le niveau d'eau présent dans le
+                    sol, analyse les données et envoie une notification à l'utilisateur lorsqu'un manque d'eau est
+                    détecté. En résumé, il observe, analyse et alerte.
                 </p>
             </div>
 
-            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-            
-        <div class="relative flex flex-col items-center gap-y-8 md:grid md:grid-cols-6 md:gap-x-2 lg:gap-x-4 mb-20 md:items-center justify-start p-5">
 
-            <div class="gap-2 w-full flex flex-col items-center col-span-2 md:col-span-1 md:-translate-y-10 z-20">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
-                    <span class="rotate-45 font-medium text-gray-900">Détection</span>
+            <div
+                class="relative flex flex-col items-center gap-y-8  md:grid md:grid-cols-6 md:gap-x-2 lg:gap-x-4 mb-20 md:items-center justify-start p-5">
+
+                <div class="gap-2 w-full flex flex-col items-center col-span-2 md:col-span-1 md:-translate-y-10 z-20">
+                    <div
+                        class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
+                        <span class="rotate-45 font-medium text-gray-900">Détection</span>
+                    </div>
+                    <div class="w-1 h-1 bg-gray-400 md:hidden "></div>
                 </div>
-                <div class="w-1 h-1 bg-gray-400 md:hidden "></div>
-            </div>
 
-            <div class=" gap-2 w-full flex flex-col items-center col-span-2 md:col-span-1 md:translate-y-10 z-20">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
-                    <span class="rotate-45 font-medium text-gray-900">Analyse</span>
+                <div class=" gap-2 w-full flex flex-col items-center col-span-2 md:col-span-1 md:translate-y-10 z-20">
+                    <div
+                        class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
+                        <span class="rotate-45 font-medium text-gray-900">Analyse</span>
+                    </div>
+                    <div class="w-1 h-1 bg-gray-400 md:hidden "></div>
                 </div>
-                <div class="w-1 h-1 bg-gray-400 md:hidden "></div>
-            </div>
 
-            <div class="gap-2 w-full flex flex-col items-center col-span-2 md:col-span-1 md:-translate-y-10 z-20">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
-                    <span class="rotate-45 font-medium text-gray-900">Conversion</span>
+                <div class="gap-2 w-full flex flex-col items-center col-span-2 md:col-span-1 md:-translate-y-10 z-20">
+                    <div
+                        class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
+                        <span class="rotate-45 font-medium text-gray-900">Conversion</span>
+                    </div>
+                    <div class="w-1 h-1 bg-gray-400 md:hidden"></div>
                 </div>
-                <div class="w-1 h-1 bg-gray-400 md:hidden"></div>
-            </div>
 
-            <div class="gap-2 w-full flex flex-col items-center col-span-3 md:col-span-1 md:mt-8 md:translate-y-10 z-20">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
-                    <span class="rotate-45 font-medium text-gray-900">Alerte</span>
+                <div
+                    class="gap-2 w-full flex flex-col items-center col-span-3 md:col-span-1 md:mt-8 md:translate-y-10 z-20">
+                    <div
+                        class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
+                        <span class="rotate-45 font-medium text-gray-900">Alerte</span>
+                    </div>
+                    <div class="w-1 h-1 bg-gray-400 md:hidden"></div>
                 </div>
-                <div class="w-1 h-1 bg-gray-400 md:hidden"></div>
-            </div>
 
-            <div class="gap-2 w-full flex flex-col items-center col-span-3 md:col-span-1 md:mt-8  md:-translate-y-10 z-20">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
-                    <span class="rotate-45 font-medium text-gray-900">Transmission</span>
+                <div
+                    class="gap-2 w-full flex flex-col items-center col-span-3 md:col-span-1 md:mt-8  md:-translate-y-10 z-20">
+                    <div
+                        class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
+                        <span class="rotate-45 font-medium text-gray-900">Transmission</span>
+                    </div>
+                    <div class="w-1 h-1 bg-gray-400 md:hidden"></div>
                 </div>
-                <div class="w-1 h-1 bg-gray-400 md:hidden"></div>
-            </div>
 
-            <div class="gap-2 w-full flex flex-col items-center col-span-6 md:col-span-1 md:mt-8  md:translate-y-10 z-20">
-                <div class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
-                    <span class="rotate-45 font-medium text-gray-900">Notification</span>
+                <div
+                    class="gap-2 w-full flex flex-col items-center col-span-6 md:col-span-1 md:mt-8  md:translate-y-10 z-20">
+                    <div
+                        class="w-28 h-28 bg-radial from-white to-gray-400 border border-gray-400 rounded-3xl shadow-lg flex items-center justify-center text-center transform -rotate-45">
+                        <span class="rotate-45 font-medium text-gray-900">Notification</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 m-7">
+
+            <div
+                class="bg-radial from-white to-gray-400/40  p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300 ">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/zoom-question.png" alt="Icone Détection">
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-900">Détection</h3>
+                </div>
+                <p class="text-sm text-gray-800">
+                    Le capteur d'humidité du sol mesure la quantité d'eau présente dans la terre. Lorsque l'humidité
+                    descend en dessous d'un seuil défini, le capteur enregistre cette variation.
+                </p>
             </div>
 
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 m-7">
-
-                <div class="bg-radial from-white to-gray-400/40  p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300 ">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
-                            <img class="w-7" src="assets/zoom-question.png" alt="Icone Détection">
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-900">Détection</h3>
+            <div
+                class="bg-radial from-white to-gray-400/40  p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/transform.png" alt="Icone Conversion">
                     </div>
-                    <p class="text-sm text-gray-800">
-                        Le capteur d'humidité du sol mesure la quantité d'eau présente dans la terre. Lorsque l'humidité descend en dessous d'un seuil défini, le capteur enregistre cette variation.
-                    </p>
+                    <h3 class="font-bold text-lg text-gray-900">Conversion</h3>
                 </div>
+                <p class="text-sm text-gray-800">
+                    Les données brutes (tension ou résistance du sol) sont transformées en signaux électriques par le
+                    circuit de conversion. Les signaux sont ensuite traduits en valeurs numériques afin que le
+                    microcontrôleur puisse les analyser.
+                </p>
+            </div>
 
-                <div class="bg-radial from-white to-gray-400/40  p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
-                            <img class="w-7" src="assets/transform.png" alt="Icone Conversion">
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-900">Conversion</h3>
+            <div
+                class="bg-radial from-white to-gray-400/40  p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/report-analytics.png" alt="Icone Analyse">
                     </div>
-                    <p class="text-sm text-gray-800">
-                        Les données brutes (tension ou résistance du sol) sont transformées en signaux électriques par le circuit de conversion. Les signaux sont ensuite traduits en valeurs numériques afin que le microcontrôleur puisse les analyser.
-                    </p>
+                    <h3 class="font-bold text-lg text-gray-900">Analyse</h3>
                 </div>
+                <p class="text-sm text-gray-800">
+                    Le microcontrôleur compare la valeur reçue avec le seuil de décision prédéfini (manque d'eau). Si
+                    l'humidité est inférieure à ce seuil, le système conclut qu'il y a un manque d'eau.
+                </p>
+            </div>
 
-                <div class="bg-radial from-white to-gray-400/40  p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
-                            <img class="w-7" src="assets/report-analytics.png" alt="Icone Analyse">
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-900">Analyse</h3>
+            <div
+                class="bg-radial from-white to-gray-400/40  p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/alert-triangle.png" alt="Icone Alerte">
                     </div>
-                    <p class="text-sm text-gray-800">
-                        Le microcontrôleur compare la valeur reçue avec le seuil de décision prédéfini (manque d'eau). Si l'humidité est inférieure à ce seuil, le système conclut qu'il y a un manque d'eau.
-                    </p>
+                    <h3 class="font-bold text-lg text-gray-900">Alerte</h3>
                 </div>
+                <p class="text-sm text-gray-800">
+                    Une fois le manque d'eau décelé, une alerte interne est générée. Cette alerte peut se manifester
+                    sous forme d'un signal lumineux, sonore ou de message interne.
+                </p>
+            </div>
 
-                <div class="bg-radial from-white to-gray-400/40  p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
-                            <img class="w-7" src="assets/alert-triangle.png" alt="Icone Alerte">
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-900">Alerte</h3>
+            <div
+                class="bg-radial from-white to-gray-400/40 p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300 ">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/transition-top.png" alt="Icone Transmission">
                     </div>
-                    <p class="text-sm text-gray-800">
-                        Une fois le manque d'eau décelé, une alerte interne est générée. Cette alerte peut se manifester sous forme d'un signal lumineux, sonore ou de message interne.
-                    </p>
+                    <h3 class="font-bold text-lg text-gray-900">Transmission</h3>
                 </div>
+                <p class="text-sm text-gray-800">
+                    Les données sont transmises au smartphone ou au réseau via des protocoles sans fil (Bluetooth,
+                    Wi-Fi, ou niveau RIF). À ce stade, les informations circulent sous forme de messages numériques ou
+                    de données API.
+                </p>
+            </div>
 
-                <div class="bg-radial from-white to-gray-400/40 p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300 ">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
-                            <img class="w-7" src="assets/transition-top.png" alt="Icone Transmission">
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-900">Transmission</h3>
+            <div
+                class="bg-radial from-white to-gray-400/40 p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
+                        <img class="w-7" src="assets/bell-ringing.png" alt="Icone Notification">
                     </div>
-                    <p class="text-sm text-gray-800">
-                        Les données sont transmises au smartphone ou au réseau via des protocoles sans fil (Bluetooth, Wi-Fi, ou niveau RIF). À ce stade, les informations circulent sous forme de messages numériques ou de données API.
-                    </p>
+                    <h3 class="font-bold text-lg text-gray-900">Notification</h3>
                 </div>
-
-                <div class="bg-radial from-white to-gray-400/40 p-6 rounded-xl shadow-xl border border-gray-400 hover:shadow-2xs transition-shadow duration-300">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
-                            <img class="w-7" src="assets/bell-ringing.png" alt="Icone Notification">
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-900">Notification</h3>
-                    </div>
-                    <p class="text-sm text-gray-800">
-                        L'application mobile reçoit une notification push que l'utilisateur peut consulter. L'utilisateur peut alors consulter le niveau d'humidité précis et recevoir des recommandations pour le prochain arrosage.
-                    </p>
-                </div>
-
+                <p class="text-sm text-gray-800">
+                    L'application mobile reçoit une notification push que l'utilisateur peut consulter. L'utilisateur
+                    peut alors consulter le niveau d'humidité précis et recevoir des recommandations pour le prochain
+                    arrosage.
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="bg-radial from-white to-gray-300 py-16 md:py-24 relative overflow-hidden">
-        <img class="relative translate-y-20 bottom-5 min-w-screen" src="assets/line2.png" alt="">
+    <section class="h-screen bg-radial from-white to-gray-300 py-16 md:py-24 relative overflow-hidden">
+        <img class="relative bottom-5 min-w-screen" src="assets/line2_transparent.png" alt="">
 
         <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0"
-                style="
+            <div class="absolute inset-0" style="
                     background-image: url('assets/Map_Plane_sigle.png');
                     background-size: cover;
                     background-position: center;
                     filter: grayscale(50%) brightness(0.7);
                     opacity: 0.5;
-
                 ">
             </div>
         </div>
 
         <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
-            <img src="assets/PAYROT.png" alt="STRÖMA Watermark"
-                class="w-full max-w-4xl opacity-50 select-none"
+            <img src="assets/PAYROT.png" alt="STRÖMA Watermark" class="w-full max-w-4xl opacity-50 select-none"
                 style="transform: scale(1);">
         </div>
 
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 ">
 
             <div class="text-center mb-10">
                 <h2 class=" text-2xl font-bold uppercase tracking-widest -translate-y-20 text-gray-700">(FAQ)</h2>
@@ -447,101 +494,141 @@
 
             <div class="space-y-9 -translate-y-15">
 
-                <details class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
+                <details
+                    class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
                     <summary class="flex justify-between items-center cursor-pointer p-4">
-                        <p class="font-medium text-lg text-gray-800">Comment le capteur STROMA mesure-t-il l'humidité du sol ?</p>
-                        <span class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
+                        <p class="font-medium text-lg text-gray-800">Comment le capteur STROMA mesure-t-il l'humidité du
+                            sol ?</p>
+                        <span
+                            class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
                     </summary>
                     <div class="p-4 pt-0 text-gray-700 border-t border-gray-300">
-                        Le capteur STROMA utilise la technologie de la résistance diélectrique pour mesurer avec précision la quantité d'eau présente dans le sol. Cette méthode garantit une lecture fiable et non corrosive sur le long terme.
+                        Le capteur STROMA utilise la technologie de la résistance diélectrique pour mesurer avec
+                        précision la quantité d'eau présente dans le sol. Cette méthode garantit une lecture fiable et
+                        non corrosive sur le long terme.
                     </div>
                 </details>
 
-                <details class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
+                <details
+                    class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
                     <summary class="flex justify-between items-center cursor-pointer p-4">
-                        <p class="font-medium text-lg text-gray-800">Le capteur fonctionne-t-il avec toutes les plantes ?</p>
-                        <span class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
+                        <p class="font-medium text-lg text-gray-800">Le capteur fonctionne-t-il avec toutes les plantes
+                            ?</p>
+                        <span
+                            class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
                     </summary>
                     <div class="p-4 pt-0 text-gray-700 border-t border-gray-300">
-                        Oui, STROMA est conçu pour s'adapter à une large variété de sols et de plantes, qu'elles soient d'intérieur ou d'extérieur (grâce à sa résistance aux intempéries). Vous pouvez ajuster le seuil d'alerte dans l'application pour correspondre aux besoins spécifiques de chaque espèce.
+                        Oui, STROMA est conçu pour s'adapter à une large variété de sols et de plantes, qu'elles soient
+                        d'intérieur ou d'extérieur (grâce à sa résistance aux intempéries). Vous pouvez ajuster le seuil
+                        d'alerte dans l'application pour correspondre aux besoins spécifiques de chaque espèce.
                     </div>
                 </details>
 
-                <details class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
+                <details
+                    class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
                     <summary class="flex justify-between items-center cursor-pointer p-4">
-                        <p class="font-medium text-lg text-gray-800">Ai-je besoin d'une connexion Internet pour recevoir les notifications ?</p>
-                        <span class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
+                        <p class="font-medium text-lg text-gray-800">Ai-je besoin d'une connexion Internet pour recevoir
+                            les notifications ?</p>
+                        <span
+                            class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
                     </summary>
                     <div class="p-4 pt-0 text-gray-700 border-t border-gray-300">
-                        Oui, pour recevoir les notifications "push" sur votre smartphone, une connexion Wi-Fi ou mobile active est nécessaire pour la transmission de l'alerte depuis notre serveur. Cependant, le capteur continuera de mesurer et d'analyser l'humidité hors connexion.
+                        Oui, pour recevoir les notifications "push" sur votre smartphone, une connexion Wi-Fi ou mobile
+                        active est nécessaire pour la transmission de l'alerte depuis notre serveur. Cependant, le
+                        capteur continuera de mesurer et d'analyser l'humidité hors connexion.
                     </div>
                 </details>
 
-                <details class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
+                <details
+                    class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
                     <summary class="flex justify-between items-center cursor-pointer p-4">
-                        <p class="font-medium text-lg text-gray-800">Quelle est la durée de vie de la batterie du capteur ?</p>
-                        <span class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
+                        <p class="font-medium text-lg text-gray-800">Quelle est la durée de vie de la batterie du
+                            capteur ?</p>
+                        <span
+                            class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
                     </summary>
                     <div class="p-4 pt-0 text-gray-700 border-t border-gray-300">
-                        La batterie rechargeable de STROMA est optimisée pour l'économie d'énergie et offre une autonomie de **6 à 12 mois** dans des conditions d'utilisation normales. Un indicateur de niveau de batterie est disponible dans l'application.
+                        La batterie rechargeable de STROMA est optimisée pour l'économie d'énergie et offre une
+                        autonomie de **6 à 12 mois** dans des conditions d'utilisation normales. Un indicateur de niveau
+                        de batterie est disponible dans l'application.
                     </div>
                 </details>
-                <details class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
+                <details
+                    class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
                     <summary class="flex justify-between items-center cursor-pointer p-4">
                         <p class="font-medium text-lg text-gray-800">L'appareil peut-il être utilisé à l'extérieur ?</p>
-                        <span class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
+                        <span
+                            class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
                     </summary>
                     <div class="p-4 pt-0 text-gray-700 border-t border-gray-300">
-                        Absolument. Le boîtier du capteur STROMA est conçu pour être résistant aux intempéries (norme IP67), ce qui le rend idéal pour une utilisation en extérieur dans votre jardin ou sur votre balcon.
+                        Absolument. Le boîtier du capteur STROMA est conçu pour être résistant aux intempéries (norme
+                        IP67), ce qui le rend idéal pour une utilisation en extérieur dans votre jardin ou sur votre
+                        balcon.
                     </div>
                 </details>
 
-                <details class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
+                <details
+                    class="bg-white/50 backdrop-blur rounded-lg shadow-md border border-gray-300 hover:shadow-2xs transition-shadow duration-300">
                     <summary class="flex justify-between items-center cursor-pointer p-4">
-                        <p class="font-medium text-lg text-gray-800">Les données de mon capteur sont-elles enregistrées quelque part ?</p>
-                        <span class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
+                        <p class="font-medium text-lg text-gray-800">Les données de mon capteur sont-elles enregistrées
+                            quelque part ?</p>
+                        <span
+                            class="text-xl font-bold text-gray-600 transition-transform duration-200 group-open:rotate-45">+</span>
                     </summary>
                     <div class="p-4 pt-0 text-gray-700 border-t border-gray-300">
-                        Oui, toutes les données d'humidité sont stockées de manière sécurisée et anonymisée sur nos serveurs. Vous pouvez consulter l'historique complet des mesures et des arrosages via l'application mobile.
+                        Oui, toutes les données d'humidité sont stockées de manière sécurisée et anonymisée sur nos
+                        serveurs. Vous pouvez consulter l'historique complet des mesures et des arrosages via
+                        l'application mobile.
                     </div>
                 </details>
-                </div>
             </div>
         </div>
     </section>
 
 
-    <section id="partenaires" class=" bg-radial from-white to-gray-300 ">
-        <img class="relative translate-y-25 bottom-10 min-w-screen" src="assets/line2.png" alt="">
-        <div class="text-center mb-20 px-4 md:px-16">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4 font-[audiowide]  ">Nos Partenaires :</h1>
-            <p class="text-xl max-w-4xl mx-auto">Stroma est fier de collaborer avec des entreprises et organisations qui partagent notre vision d'une technologie au service de la nature.</p>
+    <section id="partenaires" class="h-300 bg-radial from-white to-gray-300 ">
+        <img class="relative translate-y-25 bottom-10 min-w-screen" src="assets/line2_transparent.png" alt="">
+        <div class="text-center mb-12 p-12 md:px-16">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 font-[audiowide]">Nos Partenaires :</h1>
+            <p class="text-xl max-w-4xl mx-auto">Stroma est fier de collaborer avec des entreprises et organisations qui
+                partagent notre vision d'une technologie au service de la nature.</p>
         </div>
 
         <div class="bg-radial from-white to-gray-400/40 rounded-xl shadow-lg p-10 md:p-10 max-w-7xl mx-auto  ">
             <h2 class="text-3xl font-semibold mb-12 text-center text-black">Nos Collaborations Clés</h2>
 
-            <div class="bg-radial from-white to-gray-400/20 rounded-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-20 gap-10 ">
+            <div
+                class="bg-radial from-white to-gray-400/20 rounded-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-20 gap-10 ">
 
-                <div class="flex flex-col items-center p-6 bg-radial from-white to-gray-400/20  rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <div
+                    class="flex flex-col items-center p-6 bg-radial from-white to-gray-400/20  rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                     <img src="assets/Alaji.png" alt="Logo ALAJI" class="w-40 h-30 object-contain mb-4">
                     <h3 class="text-xl font-semibold mb-2">ALAJI</h3>
-                    <p class="text-center text-sm mb-4">Alaji est un acteur majeur de la formation professionnelle, accompagnant les talents de demain, nous cultivons l'innovation et le savoir-faire.</p>
-                    <a href="https://www.alaji.fr/" target="_blank" class="text-black hover:underline text-sm font-medium">Visiter le site</a>
+                    <p class="text-center text-sm mb-4">Alaji est un acteur majeur de la formation professionnelle,
+                        accompagnant les talents de demain, nous cultivons l'innovation et le savoir-faire.</p>
+                    <a href="https://www.alaji.fr/" target="_blank"
+                        class="text-black hover:underline text-sm font-medium">Visiter le site</a>
                 </div>
 
-                <div class="flex flex-col items-center p-6 bg-radial from-white to-gray-400/20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <div
+                    class="flex flex-col items-center p-6 bg-radial from-white to-gray-400/20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                     <img src="assets/logo-region.png" alt="Logo Région Grand Est" class="w-70 h-30 object-contain mb-4">
                     <h3 class="text-xl font-semibold mb-2">La Région Grand Est</h3>
-                    <p class="text-center text-sm mb-4">La Région Grand Est soutient activement les projets innovants qui contribuent au développement économique durable et à l'attractivité de notre territoire.</p>
-                    <a href="https://www.grandest.fr/" target="_blank" class="text-black hover:underline text-sm font-medium">Visiter le site</a>
+                    <p class="text-center text-sm mb-4">La Région Grand Est soutient activement les projets innovants
+                        qui contribuent au développement économique durable et à l'attractivité de notre territoire.</p>
+                    <a href="https://www.grandest.fr/" target="_blank"
+                        class="text-black hover:underline text-sm font-medium">Visiter le site</a>
                 </div>
 
-                <div class="flex flex-col items-center p-6 bg-radial from-white to-gray-400/20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <img src="assets/logo-france-travail.png" alt="Logo France Travail" class="w-60 h-30 object-contain mb-4">
+                <div
+                    class="flex flex-col items-center p-6 bg-radial from-white to-gray-400/20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="assets/logo-france-travail.png" alt="Logo France Travail"
+                        class="w-60 h-30 object-contain mb-4">
                     <h3 class="text-xl font-semibold mb-2">France Travail</h3>
-                    <p class="text-center text-sm mb-4">France Travail est un partenaire essentiel dans notre démarche de recrutement et de développement des compétences.</p>
-                    <a href="https://www.francetravail.fr/" target="_blank"  class="text-black hover:underline text-sm font-medium">Visiter le site</a>
+                    <p class="text-center text-sm mb-4">France Travail est un partenaire essentiel dans notre démarche
+                        de recrutement et de développement des compétences.</p>
+                    <a href="https://www.francetravail.fr/" target="_blank"
+                        class="text-black hover:underline text-sm font-medium">Visiter le site</a>
                 </div>
             </div>
         </div>
@@ -559,7 +646,9 @@
                     </div>
                     <div class="flex space-x-4 text-xl -translate-y-25 ">
                         <a href="https://x.com/" target="_blank" class="transition-all hover:scale-110">
-                            <img class="w-10 h-10 -translate-y-1.5" src="assets/vecteezy_new-twitter-x-logo-twitter-icon-x-social-media-icon_42148611.png" alt="Icône Twitter">
+                            <img class="w-10 h-10 -translate-y-1.5"
+                                src="assets/vecteezy_new-twitter-x-logo-twitter-icon-x-social-media-icon_42148611.png"
+                                alt="Icône Twitter">
                         </a>
                         <a href="https://www.instagram.com/" target="_blank" class="transition-all hover:scale-110">
                             <img class="w-7 h-7" src="assets/instagram.png" alt="Icône Instagram">
@@ -568,16 +657,21 @@
                 </div>
                 <div class="md:col-span-1 text-sm text-center md:text-left">
                     <p class="max-w-xs mx-auto md:mx-0 leading-snug">
-                        Téléchargez notre application et gardez le contrôle, où que vous soyez. Profitez de toutes les fonctionnalités directement depuis votre smartphone. Disponible dès maintenant sur App Store et Google Play – simple, rapide et pratique, tout ce dont vous avez besoin.
+                        Téléchargez notre application et gardez le contrôle, où que vous soyez. Profitez de toutes les
+                        fonctionnalités directement depuis votre smartphone. Disponible dès maintenant sur App Store et
+                        Google Play – simple, rapide et pratique, tout ce dont vous avez besoin.
                     </p>
                 </div>
-                <div class="flex flex-row md:flex-col space-y-4 md:space-y-4 space-x-4 md:space-x-0 justify-center md:items-end md:col-span-1">
+                <div
+                    class="flex flex-row md:flex-col space-y-4 md:space-y-4 space-x-4 md:space-x-0 justify-center md:items-end md:col-span-1">
 
-                    <a href="https://www.apple.com/fr/app-store/" target="_blank" class="inline-flex items-center flex-row-reverse justify-center bg-gray-400 hover:bg-gray-500 text-white font-bold py-4 px-9 rounded-full shadow-md text-xs transition duration-300 min-w-[150px]">
+                    <a href="https://www.apple.com/fr/app-store/" target="_blank"
+                        class="inline-flex items-center flex-row-reverse justify-center bg-gray-400 hover:bg-gray-500 text-white font-bold py-4 px-9 rounded-full shadow-md text-xs transition duration-300 min-w-[150px]">
                         APP STORE
                         <img class="w-8 h-8 mr-6" src="assets/app_store.png" alt="App Store badge">
                     </a>
-                    <a href="https://play.google.com/store/apps?hl=fr" target="_blank" class="inline-flex items-center flex-row-reverse justify-center bg-gray-400 hover:bg-gray-500 text-white font-bold py-4 px-9 rounded-full shadow-md text-xs transition duration-300 min-w-[150px]">
+                    <a href="https://play.google.com/store/apps?hl=fr" target="_blank"
+                        class="inline-flex items-center flex-row-reverse justify-center bg-gray-400 hover:bg-gray-500 text-white font-bold py-4 px-9 rounded-full shadow-md text-xs transition duration-300 min-w-[150px]">
                         GOOGLE PLAY
                         <img class="w-8 h-8 mr-2" src="assets/google_play.png" alt="Google Play badge">
                     </a>
@@ -588,7 +682,7 @@
 
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
 
-                <div class="space-y-4" >
+                <div class="space-y-4">
                     <h3 class="font-bold text-sm uppercase mb-4 text-gray-800">Entreprise</h3>
                     <ul class="space-y-2 text-sm">
                         <li><a href="equipe.html" class="hover:underline">À propos de nous</a></li>
@@ -623,26 +717,33 @@
                     <div>
                         <h3 class="font-bold text-sm uppercase mb-4 text-gray-800">Contact</h3>
                         <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="hover:underline">Nous contacter</a></li>
+                            <li><a href="equipe.html" class="hover:underline">Nous contacter</a></li>
                             <li><a href="#" class="hover:underline">Support technique</a></li>
                         </ul>
                     </div>
                     <div>
                         <h3 class="font-bold text-sm uppercase mb-4 text-gray-800">Mentions légales</h3>
                         <ul class="space-y-2 text-sm">
-                            <li><a href="https://www.francenum.gouv.fr/guides-et-conseils/developpement-commercial/site-web/rediger-des-conditions-generales-dutilisation" target="_blank" class="hover:underline">Conditions d'utilisation</a></li>
-                            <li><a href="https://www.economie.gouv.fr/politique-confidentialite" target="_blank" class="hover:underline">Politique de confidentialité</a></li>
+                            <li><a href="https://www.francenum.gouv.fr/guides-et-conseils/developpement-commercial/site-web/rediger-des-conditions-generales-dutilisation"
+                                    target="_blank" class="hover:underline">Conditions d'utilisation</a></li>
+                            <li><a href="https://www.economie.gouv.fr/politique-confidentialite" target="_blank"
+                                    class="hover:underline">Politique de confidentialité</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-end pt-5 border-t border-gray-300">
+            <div
+                class="flex flex-col md:flex-row justify-between items-start md:items-end pt-5 border-t border-gray-300">
                 <p class="text-sm max-w-md mb-6 md:mb-0">
-                    <strong class="font-bold">STROMA</strong> est un capteur intelligent d'humidité du sol conçu pour aider les amoureux des plantes à mieux comprendre les besoins de leurs végétaux. Grâce à la technologie et à la nature réunies, <strong class="font-bold">STROMA</strong> simplifie l'arrosage et favorise une croissance durable.
+                    <strong class="font-bold">STROMA</strong> est un capteur intelligent d'humidité du sol conçu pour
+                    aider les amoureux des plantes à mieux comprendre les besoins de leurs végétaux. Grâce à la
+                    technologie et à la nature réunies, <strong class="font-bold">STROMA</strong> simplifie l'arrosage
+                    et favorise une croissance durable.
                 </p>
 
-                <div class="bg-radial from-white to-gray-400/40 text-gray-800 text-xs p-3 rounded-4xl shadow-inner items-center flex flex-col ">
+                <div
+                    class="bg-radial from-white to-gray-400/40 text-gray-800 text-xs p-3 rounded-4xl shadow-inner items-center flex flex-col ">
                     <span>© 2025 STROMA.</span>
                     <span>Propulsé par la nature.</span>
                 </div>

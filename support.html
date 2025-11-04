@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,64 +14,103 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <!-- utiliser pour le responsive (max-[1750px]: max-[980px]: max-[700px]: max-[500px]:)-->
+
+
 <body class="font-[Roboto]">
 
     <header class="bg-no-repeat bg-center bg-contain flex flex-col w-full h-screen max-[1540px]:h-[110vh]">
-
-        <span class="absolute top-70 -z-10 bg-gray-400/20 blur-2xl w-full h-150"></span>
         <nav id="navbar" class="w-full flex justify-around p-4">
 
             <div class="flex items-center gap-4">
                 <img src="assets/Stroma_Logo_cropped.png" alt="Stroma Logo" class="w-17 h-17 ml-4">
                 <h3 class="font-[audiowide] text-3xl max-[500px]:hidden min-[500px]:flex">STROMA</h3>
             </div>
-
-            <div class="flex justify-center items-center gap-14 font-[Roboto] text-[20px] min-[980px]:flex max-[980px]:hidden max-[1750px]:text-[15px] max-[980px]: max-[700px]: max-[500px]:">
-                <a href="index.html" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Accueil</p></a>
-                <a href="#" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Solutions</p></a>
-                <a href="#" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Fonctionnement</p></a>
-                <a href="#" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href=""><p>Application</p></a>
+            <div
+                class=" flex justify-center items-center gap-14 font-[Roboto] text-[20px] min-[980px]:flex max-[980px]:hidden max-[1750px]:text-[15px] max-[980px]: max-[700px]: max-[500px]:">
+                <a href="index.html" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200"
+                    href="">
+                    <p>Accueil</p>
+                </a>
+                <a href="#" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href="">
+                    <p>Solutions</p>
+                </a>
+                <a href="#" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href="">
+                    <p>Fonctionnement</p>
+                </a>
+                <a href="#" class="hover:-translate-0.5 hover:text-shadow-lg transition-all duration-200" href="">
+                    <p>Application</p>
+                </a>
             </div>
             <div class="flex items-center">
                 <div class="flex justify-center items-center">
-                    <button class="bg-[#292929] text-white rounded-4xl p-4 px-8 font-[Roboto] transition-all duration-150  hover:shadow-lg hover:-translate-0.5 hover:bg-white hover:text-black hover:border-2 hover:font-bold max-[700px]:hidden min-[700px]:flex">S'inscrire Maintenant</button>
+                    <button
+                        class="bg-[#292929] text-white rounded-4xl p-4 px-8 font-[Roboto] transition-all duration-150  hover:shadow-lg hover:-translate-0.5 hover:bg-white hover:text-black hover:border-2 hover:font-bold max-[700px]:hidden min-[700px]:flex">S'inscrire
+                        Maintenant</button>
                 </div>
-                
+
                 <div class="inline-block min-[980px]:hidden max-[980px]:block">
-                    <button id="dropdown-button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold inset-ring-1 inset-ring-white/5 hover:bg-white/20" aria-expanded="false" aria-controls="user-menu">
-                        
+                    <button id="dropdown-button"
+                        class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold inset-ring-1 inset-ring-white/5 hover:bg-white/20"
+                        aria-expanded="false" aria-controls="user-menu">
+
                         <img src="assets/icon/icon-menu-handburger.png" alt="" class="h-18 w-18">
-                        
-                        </button>
-                    
-                    <div id="user-menu" class="absolute z-10 right-0 w-56 mt-2 origin-top-right rounded-md bg-white outline-1 -outline-offset-1 outline-black/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in" data-closed="">
+
+                    </button>
+
+                    <div id="user-menu"
+                        class="absolute z-10 right-0 w-56 mt-2 origin-top-right rounded-md bg-white outline-1 -outline-offset-1 outline-black/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+                        data-closed="">
                         <div class="py-1">
-                            <a href="index.html" class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden transition-all duration-150  hover:shadow-lg hover:-translate-0.5">Acceuil</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden transition-all duration-150  hover:shadow-lg hover:-translate-0.5">Solutions</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden transition-all duration-150  hover:shadow-lg hover:-translate-0.5">Fonctionnement</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden transition-all duration-150  hover:shadow-lg hover:-translate-0.5">Application</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden underline transition-all duration-150  hover:shadow-lg hover:-translate-0.5 max-[700px]:flex min-[700px]:hidden">S'inscrire Maintenant</a>
+                            <a href="index.html"
+                                class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden transition-all duration-150  hover:shadow-lg hover:-translate-0.5">Acceuil</a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden transition-all duration-150  hover:shadow-lg hover:-translate-0.5">Solutions</a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden transition-all duration-150  hover:shadow-lg hover:-translate-0.5">Fonctionnement</a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden transition-all duration-150  hover:shadow-lg hover:-translate-0.5">Application</a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-black focus:bg-gray-100 focus:text-black focus:outline-hidden underline transition-all duration-150  hover:shadow-lg hover:-translate-0.5 max-[700px]:flex min-[700px]:hidden">S'inscrire
+                                Maintenant</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-        <section class="bg-gray-400/20">
-            <p class="font-[audiowide] flex justify-center text-8xl pb-5 max-[1750px]:text-6xl max-[980px]:text-4xl max-[700px]:text-2xl max-[500px]:text-xl">Support</p>
+        
+        <section class="bg-[url(assets/bg-support-page.gif)] bg-no-repeat bg-cover h-screen p-14">
+            <p
+                class="font-[audiowide] flex justify-center text-8xl pb-5 max-[1750px]:text-6xl max-[980px]:text-4xl max-[700px]:text-2xl max-[500px]:text-xl">
+                Support</p>
             <div class="flex justify-center items-center pb-5">
-                <img class="h-25 backdrop-brightness-50 transition-all ease-in-out duration-200 hover:cursor-pointer hover:scale-105 rounded-2xl hover:p-3 max-[1750px]:h-20 max-[980px]:h-15 max-[700px]:h-10 max-[500px]:h-10" src="assets/icon/icons8-téléphone-48.png" alt="">
-                <div class="w-125 h-0 border-2 border-gray-500 max-[1750px]:w-85 max-[980px]:w-50 max-[700px]:w-25 max-[500px]:w-10"></div>
-                <a href="https://x.com/Stroma" target="_blank"><img class="h-25 backdrop-brightness-50 transition-all ease-in-out duration-200 hover:cursor-pointer hover:scale-105 rounded-2xl hover:p-3 max-[1750px]:h-20 max-[980px]:h-15 max-[700px]:h-10 max-[500px]:h-10" src="assets/icon/icons8-twitter-48.png" alt=""></a>
-                <div class="w-125 h-0 border-2 border-gray-500 max-[1750px]:w-85 max-[980px]:w-50 max-[700px]:w-25 max-[500px]:w-10"></div>
-                <a href="https://www.instagram.com/stroma" target="_blank"><img class="h-25 backdrop-brightness-50 transition-all ease-in-out duration-200 hover:cursor-pointer hover:scale-105 rounded-2xl hover:p-3 max-[1750px]:h-20 max-[980px]:h-15 max-[700px]:h-10 max-[500px]:h-10" src="assets/icon/icons8-insta-48.png" alt=""></a>
+                <img class="h-25 backdrop-brightness-50 transition-all ease-in-out duration-200 hover:cursor-pointer hover:scale-105 rounded-2xl hover:p-3 max-[1750px]:h-20 max-[980px]:h-15 max-[700px]:h-10 max-[500px]:h-10"
+                    src="assets/icon/icons8-téléphone-48.png" alt="">
+                <div
+                    class="w-125 h-0 border-2 border-gray-500 max-[1750px]:w-85 max-[980px]:w-50 max-[700px]:w-25 max-[500px]:w-10">
+                </div>
+                <a href="https://x.com/Stroma" target="_blank"><img
+                        class="h-25 backdrop-brightness-50 transition-all ease-in-out duration-200 hover:cursor-pointer hover:scale-105 rounded-2xl hover:p-3 max-[1750px]:h-20 max-[980px]:h-15 max-[700px]:h-10 max-[500px]:h-10"
+                        src="assets/icon/icons8-twitter-48.png" alt=""></a>
+                <div
+                    class="w-125 h-0 border-2 border-gray-500 max-[1750px]:w-85 max-[980px]:w-50 max-[700px]:w-25 max-[500px]:w-10">
+                </div>
+                <a href="https://www.instagram.com/stroma" target="_blank"><img
+                        class="h-25 backdrop-brightness-50 transition-all ease-in-out duration-200 hover:cursor-pointer hover:scale-105 rounded-2xl hover:p-3 max-[1750px]:h-20 max-[980px]:h-15 max-[700px]:h-10 max-[500px]:h-10"
+                        src="assets/icon/icons8-insta-48.png" alt=""></a>
             </div>
-            <p class="flex justify-center text-xl max-[1750px]: max-[980px]: max-[700px]:text-2xs max-[500px]:text-xs">Cliquez sur l'icône de votre choix pour commencer</p>
+            <p class="flex justify-center text-xl max-[1750px]: max-[980px]: max-[700px]:text-2xs max-[500px]:text-xs">
+                Cliquez sur l'icône de votre choix pour commencer</p>
         </section>
-        <img src="assets/bg-support-page.gif" class="blur-xs relative"autoPlay muted loop>
     </header>
     <script type="module" src="/script/script.js"></script>
 </body>
+
+
 </html>
+
+<!-- UnlhbiBpbCBhIHRhZmZlciBzdXIgY2V0dGUgcGFnZSBwZW5kYW50IGdlbnJlIDQgam91cnMuIGV0IGVuY29yZSBqZSBzdWlzIGdlbnRpbC4KQ29uY2x1c2lvbiwgQnJhd2wgU3RhciBuJ2VzdCBwYXMgdW4gYm9uIElERS4= -->
