@@ -26,3 +26,11 @@
   animation-range: entry 0% cover 30%;
   
 }
+
+.bg-debug {
+  border: 2px;
+  border-color: rgba(63, 146, 179, 0.501);
+  border-style: dashed;
+  background-image: url(https://www.transparenttextures.com/patterns/grid-me.png);
+  
+}
