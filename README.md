@@ -13,8 +13,7 @@ Construire un projet de site web fonctionnel en un temp cours, pour accompagner 
 - Gérer une equipe et veillé a la bonne cooperation d'une equipe sur un projet avec git<br>
 
 <h2>Captures d'ecran</h2>
-<img src="https://files.cheapgriffy.fr/files/shr/Direct_Links/msedge_i7XL2atFrF.gif?raw" width="800">
-<img src="https://files.cheapgriffy.fr/files/shr/Direct_Links/msedge_WbOS48Npwi.gif?raw" width="800">
+<img src="https://files.cheapgriffy.fr/files/shr/Direct_Links/FireShot%20Capture%20001%20-%20Homepage%20-%20172.20.0.1.png?raw" width="600">
 
 <h2>Authors</h2>
 <a href="https://github.com/cheapgriffy">@CheapGriffy</a><br>
